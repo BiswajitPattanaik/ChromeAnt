@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<project name="OwnTaskExample" default="build" basedir=".">
+  <target name="configure" depends="">
+      <taskdef name="chrome-test" classname="ChromeTest">
+        <classpath refid="my.classpath"/>
+      </taskdef>
+  </target>
+  <path id="cav.classpath">
+    <fileset dir="lib">
+      <include name="*.jar" />
+    </fileset>
+    <fileset dir="extraClass">
+      <include name="*.class"/>
+    </fileset>
+  </path>
+  <path id="ext.classpath">
+    <fileset dir="lib">
+      <include name="*.jar" />
+    </fileset>
+  </path>
+   <path id="my.classpath">
+    <fileset dir="AntLib">
+      <include name="*.jar" />
+    </fileset>
+    <dirset dir=".">
+      <include name="classes" />
+      <include name="extraClass" />
+    </dirset>
+    <!--<fileset dir="classes">
+      <include name="*.class"/>
+    </fileset>-->
+    <fileset dir="lib">
+      <include name="*.jar"/>
+    </fileset>
+  </path>
+  <target name="clean">
+    <delete>
+      <fileset dir="classes">
+        <include name="*"/>
+      </fileset>
+      <fileset dir="extraClass">
+        <include name="*"/>
+      </fileset>
+     </delete>
+  </target>
+  <target name="clean-chrome-data">
+    <delete>
+      <fileset dir="log">
+        <include name="*"/>
+      </fileset>
+      <fileset dir="image">
+        <include name="*"/>
+      </fileset>
+    </delete>
+  </target>
+  <target name="build" depends="clean">
+      <mkdir dir="classes"/>
+      <javac srcdir="extraSource" destdir="extraClass" includeantruntime="true">
+          <classpath refid="ext.classpath"/>
+      </javac>
+      <javac srcdir="cavsrc" destdir="classes" includeantruntime="false">
+          <classpath refid="cav.classpath"/>
+      </javac>
+      <javac srcdir="source" destdir="classes" includeantruntime="false">
+          <classpath refid="my.classpath"/>
+      </javac>
+  </target> 	 
+  <target name="chrome" depends="configure,clean-chrome-data">
+      <log message="abcd"/>
+      <chrome-test chromeExecutablePath="${basedir}/etc/chromedriver-2.41" chromeBinaryPath="/opt/google/chrome/google-chrome" headlessFlag="false">
+          <getURL url="https://10.10.30.106/ProductUI/#/login" caseName="Netstorm ProductUI login Page"/>
+
+	  <!-- Login Process started -->	
+
+          <sendKey locator="name" value="name" text="JCP_Com" caseName="Enter User Name"/> 
+          <sendKey locator="name" value="password" text="cavisson" caseName="Enter User Pass"/> 
+          <submit locator="id" value="login-button" caseName="Login Button"/>
+
+	  <!-- Login Process Completed-->	
+	
+          <click locator="xpath" value="//md-card[contains(@class,'totalScenarioCard')]" caseName="open all scenarios"/>
+          <waitFor interval="10" caseName="wait for 10 seconds"/>
+          <assert locator="xpath" value="//div[contains(@class,'ui-splitbutton')]/button[contains(@class,'ui-button-text-icon-left')]/span[contains(@class,'ui-button-text')]" assertValue="JCP_Com" caseName="assert user"/>
+	  
+	  <!-- Scenario Create Process started -->	
+          
+	  <click locator="xpath" value="//button[@label='Create']" caseName="create scenario"/>
+          <waitFor interval="5" caseName="wait for 5 seconds"/>
+          <click locator="xpath" value="//div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]" caseName="click project"/>
+          <click locator="xpath" value="//div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul/li/span[text()='default']" caseName="select project"/>
+          <click locator="xpath" value="//div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]" caseName="click sub project"/>
+          <click locator="xpath" value="//div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul//span[text()='default']" caseName="select sub project"/>
+          <sendkey locator="xpath" value="//div[text()='Scenario Name ']/parent::div/descendant::input" text="test_biswajit" caseName="enter scenario name"/>
+          <submit locator="xpath" value="//footer/descendant::button[@label='Next']" caseName="click Next button"/>
+	  
+	  <!-- Scenario Create Process Completed -->	
+          
+	  <!-- Group Create Process Started -->	
+          <waitFor interval="5" caseName="wait for 5 seconds"/>
+	  <click locator="xpath" value="//button[@title='Add Group']/span[contains(@class,'fa-plus')]" caseName="Add group to scenario"/>
+          <sendkey locator="name" value="groupName" text="GroupTest" caseName="Enter Group Name"/>
+          <click locator="xpath" value="//p-radiobutton[@value='Script']" caseName="Click on Script Type Radio"/>
+          <click locator="xpath" value="//div[text()='User Profile ']/parent::div/descendant::p-dropdown" caseName="Click on User Profile"/>
+          <click locator="xpath" value="//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='Internet']" caseName="Select Internet Profile"/>
+          <click locator="xpath" value="//div[text()='Project ']/parent::div/descendant::p-dropdown" caseName="Click on Project"/>
+          <click locator="xpath" value="//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default']" caseName="Select default project"/>
+          <click locator="xpath" value="//div[text()='Sub Project ']/parent::div/descendant::p-dropdown" caseName="Click on Project"/>
+          <click locator="xpath" value="//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default']" caseName="Select default Sub project"/>
+          <click locator="xpath" value="//div[text()='Script ']/parent::div/descendant::p-dropdown" caseName="Click on Script DropDown"/>
+          <sendkey locator="xpath" value="//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul/ancestor::div[contains(@class,'ui-dropdown-panel')]/child::div[contains(@class,'ui-dropdown-filter-container')]/child::input" text="Amazon" caseName="Enter the name of script "/>
+          <click locator="xpath" value="//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='AmazonNativeAppTest']" caseName="Select Script Name"/>
+	  
+	  <!-- Group Create Process Completed -->	
+          
+	  <click locator="xpath" value="//div[contains(@class,'ui-splitbutton')]//button[contains(@class,'ui-splitbutton-menubutton')]" caseName="click corner ui button"/>
+          <click locator="xpath" value="//span[text()='Logout']" caseName="LogOut"/>
+      </chrome-test> 
+  </target>
+  <target name="test">
+      <echo>${basedir}</echo>
+  </target>
+</project>

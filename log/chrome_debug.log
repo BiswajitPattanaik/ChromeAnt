@@ -1,0 +1,3781 @@
+[1536934823.809][INFO]: COMMAND InitSession {
+   "capabilities": {
+      "desiredCapabilities": {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "window-size=1368x720", "--start-maximized", "--disable-notifications", "disable-geolocation", "ignore-certificate-errors" ],
+            "binary": "/opt/google/chrome/google-chrome",
+            "extensions": [  ]
+         },
+         "platform": "ANY",
+         "version": ""
+      },
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "window-size=1368x720", "--start-maximized", "--disable-notifications", "disable-geolocation", "ignore-certificate-errors" ],
+            "binary": "/opt/google/chrome/google-chrome",
+            "extensions": [  ]
+         }
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "window-size=1368x720", "--start-maximized", "--disable-notifications", "disable-geolocation", "ignore-certificate-errors" ],
+         "binary": "/opt/google/chrome/google-chrome",
+         "extensions": [  ]
+      },
+      "platform": "ANY",
+      "version": ""
+   }
+}
+[1536934823.809][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1536934823.809][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1536934823.849][INFO]: Launching chrome: /opt/google/chrome/google-chrome --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-geolocation --disable-hang-monitor --disable-notifications --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension=/tmp/.org.chromium.Chromium.nGvZBI/internal --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=12194 --start-maximized --test-type=webdriver --use-mock-keychain --user-data-dir=/tmp/.org.chromium.Chromium.qpOkDo --window-size=1368x720 data:,
+[1536934824.955][INFO]: resolved localhost to ["127.0.0.1"]
+[1536934825.022][INFO]: resolved localhost to ["127.0.0.1"]
+[1536934825.069][INFO]: RESPONSE InitSession {
+   "acceptInsecureCerts": true,
+   "acceptSslCerts": true,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb)",
+      "userDataDir": "/tmp/.org.chromium.Chromium.qpOkDo"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Linux",
+   "rotatable": false,
+   "setWindowRect": true,
+   "~~~": "..."
+}
+[1536934826.796][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934826.797][INFO]: Waiting for pending navigations...
+[1536934826.824][INFO]: Done waiting for pending navigations. Status: ok
+[1536934826.837][INFO]: Waiting for pending navigations...
+[1536934826.841][INFO]: Done waiting for pending navigations. Status: ok
+[1536934826.841][INFO]: RESPONSE ExecuteScript "complete"
+[1536934826.850][INFO]: COMMAND Navigate {
+   "url": "http://10.10.30.15:8003/ProductUI/#/login"
+}
+[1536934826.850][INFO]: Waiting for pending navigations...
+[1536934826.851][INFO]: Done waiting for pending navigations. Status: ok
+[1536934827.488][INFO]: Waiting for pending navigations...
+[1536934829.565][INFO]: Done waiting for pending navigations. Status: ok
+[1536934829.565][INFO]: RESPONSE Navigate
+[1536934829.570][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934829.570][INFO]: Waiting for pending navigations...
+[1536934829.669][INFO]: Done waiting for pending navigations. Status: ok
+[1536934829.676][INFO]: Waiting for pending navigations...
+[1536934829.679][INFO]: Done waiting for pending navigations. Status: ok
+[1536934829.679][INFO]: RESPONSE ExecuteScript "complete"
+[1536934829.687][INFO]: COMMAND GetWindow {
+
+}
+[1536934829.687][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934829.771][INFO]: COMMAND GetWindows {
+
+}
+[1536934829.772][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934830.278][INFO]: COMMAND GetWindows {
+
+}
+[1536934830.279][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934830.786][INFO]: COMMAND GetWindows {
+
+}
+[1536934830.788][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934830.807][INFO]: COMMAND Screenshot {
+
+}
+[1536934830.807][INFO]: Waiting for pending navigations...
+[1536934830.809][INFO]: Done waiting for pending navigations. Status: ok
+[1536934831.296][INFO]: Waiting for pending navigations...
+[1536934831.297][INFO]: Done waiting for pending navigations. Status: ok
+[1536934831.297][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9a5IjuY4u+AGuyKpz2vrOtbuLWcwsa9Y71tbWp05miMD8AECCdLrkrkeEIipRFSnJnU7S+cCbAP3f/8//qz9//oWFCAoByhnKBBD2gWr7Tu0hwgL1e8wMEIGxgJihbz+w0J8gPgG0g..."
+[1536934831.495][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934831.495][INFO]: Waiting for pending navigations...
+[1536934831.496][INFO]: Done waiting for pending navigations. Status: ok
+[1536934831.500][INFO]: Waiting for pending navigations...
+[1536934831.502][INFO]: Done waiting for pending navigations. Status: ok
+[1536934831.502][INFO]: RESPONSE ExecuteScript "complete"
+[1536934831.507][INFO]: COMMAND FindElement {
+   "using": "name",
+   "value": "name"
+}
+[1536934831.507][INFO]: Waiting for pending navigations...
+[1536934831.508][INFO]: Done waiting for pending navigations. Status: ok
+[1536934831.545][INFO]: Waiting for pending navigations...
+[1536934831.546][INFO]: Done waiting for pending navigations. Status: ok
+[1536934831.546][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-1"
+}
+[1536934831.576][INFO]: COMMAND ClearElement {
+   "id": "0.7989907836082091-1"
+}
+[1536934831.576][INFO]: Waiting for pending navigations...
+[1536934831.578][INFO]: Done waiting for pending navigations. Status: ok
+[1536934831.615][INFO]: Waiting for pending navigations...
+[1536934831.616][INFO]: Done waiting for pending navigations. Status: ok
+[1536934831.616][INFO]: RESPONSE ClearElement
+[1536934831.620][INFO]: COMMAND TypeElement {
+   "id": "0.7989907836082091-1",
+   "value": [ "cavisson" ]
+}
+[1536934831.620][INFO]: Waiting for pending navigations...
+[1536934831.621][INFO]: Done waiting for pending navigations. Status: ok
+[1536934831.689][INFO]: Waiting for pending navigations...
+[1536934831.690][INFO]: Done waiting for pending navigations. Status: ok
+[1536934831.690][INFO]: RESPONSE TypeElement
+[1536934831.693][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934831.693][INFO]: Waiting for pending navigations...
+[1536934831.694][INFO]: Done waiting for pending navigations. Status: ok
+[1536934831.698][INFO]: Waiting for pending navigations...
+[1536934831.698][INFO]: Done waiting for pending navigations. Status: ok
+[1536934831.698][INFO]: RESPONSE ExecuteScript "complete"
+[1536934831.702][INFO]: COMMAND GetWindow {
+
+}
+[1536934831.702][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934831.707][INFO]: COMMAND GetWindows {
+
+}
+[1536934831.707][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934832.213][INFO]: COMMAND GetWindows {
+
+}
+[1536934832.215][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934832.722][INFO]: COMMAND GetWindows {
+
+}
+[1536934832.724][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934832.731][INFO]: COMMAND Screenshot {
+
+}
+[1536934832.731][INFO]: Waiting for pending navigations...
+[1536934832.732][INFO]: Done waiting for pending navigations. Status: ok
+[1536934833.182][INFO]: Waiting for pending navigations...
+[1536934833.183][INFO]: Done waiting for pending navigations. Status: ok
+[1536934833.183][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9a5IjuY4u+AGuyKpz2vrOtbuLWcwsa9Y71tbWp05miMD8AECCdLrkrkeEIipRFSnJnU7S+cCbAP3f/8//qz9//oWFCAoByhnKBBD2gWr7Tu0hwgL1e8wMEIGxgJihbz+w0J8gPgG0g..."
+[1536934833.232][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934833.232][INFO]: Waiting for pending navigations...
+[1536934833.233][INFO]: Done waiting for pending navigations. Status: ok
+[1536934833.235][INFO]: Waiting for pending navigations...
+[1536934833.236][INFO]: Done waiting for pending navigations. Status: ok
+[1536934833.236][INFO]: RESPONSE ExecuteScript "complete"
+[1536934833.239][INFO]: COMMAND FindElement {
+   "using": "name",
+   "value": "password"
+}
+[1536934833.239][INFO]: Waiting for pending navigations...
+[1536934833.240][INFO]: Done waiting for pending navigations. Status: ok
+[1536934833.257][INFO]: Waiting for pending navigations...
+[1536934833.258][INFO]: Done waiting for pending navigations. Status: ok
+[1536934833.258][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-2"
+}
+[1536934833.262][INFO]: COMMAND ClearElement {
+   "id": "0.7989907836082091-2"
+}
+[1536934833.262][INFO]: Waiting for pending navigations...
+[1536934833.263][INFO]: Done waiting for pending navigations. Status: ok
+[1536934833.281][INFO]: Waiting for pending navigations...
+[1536934833.282][INFO]: Done waiting for pending navigations. Status: ok
+[1536934833.282][INFO]: RESPONSE ClearElement
+[1536934833.286][INFO]: COMMAND TypeElement {
+   "id": "0.7989907836082091-2",
+   "value": [ "@dmin" ]
+}
+[1536934833.286][INFO]: Waiting for pending navigations...
+[1536934833.286][INFO]: Done waiting for pending navigations. Status: ok
+[1536934833.346][INFO]: Waiting for pending navigations...
+[1536934833.348][INFO]: Done waiting for pending navigations. Status: ok
+[1536934833.348][INFO]: RESPONSE TypeElement
+[1536934833.351][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934833.351][INFO]: Waiting for pending navigations...
+[1536934833.352][INFO]: Done waiting for pending navigations. Status: ok
+[1536934833.354][INFO]: Waiting for pending navigations...
+[1536934833.355][INFO]: Done waiting for pending navigations. Status: ok
+[1536934833.355][INFO]: RESPONSE ExecuteScript "complete"
+[1536934833.359][INFO]: COMMAND GetWindow {
+
+}
+[1536934833.359][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934833.363][INFO]: COMMAND GetWindows {
+
+}
+[1536934833.366][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934833.876][INFO]: COMMAND GetWindows {
+
+}
+[1536934833.878][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934834.387][INFO]: COMMAND GetWindows {
+
+}
+[1536934834.389][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934834.400][INFO]: COMMAND Screenshot {
+
+}
+[1536934834.400][INFO]: Waiting for pending navigations...
+[1536934834.403][INFO]: Done waiting for pending navigations. Status: ok
+[1536934834.856][INFO]: Waiting for pending navigations...
+[1536934834.857][INFO]: Done waiting for pending navigations. Status: ok
+[1536934834.857][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9a5IjuY4u+AGuyKpz2vrOtbuLWcwsa9Y71tbWp05miMD8AECCdLrkrkeEIipRFSnJnU7S+cCbAP3f/8//qz9//oWFCAoByhnKBBD2gWr7Tu0hwgL1e8wMEIGxgJihbz+w0J8gPgG0g..."
+[1536934834.896][INFO]: COMMAND FindElement {
+   "using": "id",
+   "value": "login-button"
+}
+[1536934834.896][INFO]: Waiting for pending navigations...
+[1536934834.897][INFO]: Done waiting for pending navigations. Status: ok
+[1536934834.910][INFO]: Waiting for pending navigations...
+[1536934834.911][INFO]: Done waiting for pending navigations. Status: ok
+[1536934834.911][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-3"
+}
+[1536934834.914][INFO]: COMMAND GetUrl {
+
+}
+[1536934834.914][INFO]: Waiting for pending navigations...
+[1536934834.915][INFO]: Done waiting for pending navigations. Status: ok
+[1536934834.917][INFO]: Waiting for pending navigations...
+[1536934834.918][INFO]: Done waiting for pending navigations. Status: ok
+[1536934834.918][INFO]: RESPONSE GetUrl "https://10.10.30.15:4433/ProductUI/#/login"
+[1536934834.922][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934834.922][INFO]: Waiting for pending navigations...
+[1536934834.922][INFO]: Done waiting for pending navigations. Status: ok
+[1536934834.924][INFO]: Waiting for pending navigations...
+[1536934834.925][INFO]: Done waiting for pending navigations. Status: ok
+[1536934834.925][INFO]: RESPONSE ExecuteScript "complete"
+[1536934834.928][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-3"
+}
+[1536934834.928][INFO]: Waiting for pending navigations...
+[1536934834.929][INFO]: Done waiting for pending navigations. Status: ok
+[1536934835.002][INFO]: Waiting for pending navigations...
+[1536934835.006][INFO]: Done waiting for pending navigations. Status: ok
+[1536934835.006][INFO]: RESPONSE ClickElement
+[1536934835.014][INFO]: COMMAND GetWindow {
+
+}
+[1536934835.014][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934835.019][INFO]: COMMAND GetWindows {
+
+}
+[1536934835.019][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934835.524][INFO]: COMMAND GetWindows {
+
+}
+[1536934835.526][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934836.030][INFO]: COMMAND GetWindows {
+
+}
+[1536934836.030][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934836.035][INFO]: COMMAND Screenshot {
+
+}
+[1536934836.046][INFO]: Waiting for pending navigations...
+[1536934836.229][INFO]: Done waiting for pending navigations. Status: ok
+[1536934836.704][INFO]: Waiting for pending navigations...
+[1536934836.706][INFO]: Done waiting for pending navigations. Status: ok
+[1536934836.706][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOydeZwU1bmwn1NVvczKOgLDJrLooAIqKIKC0YAkgjFC1IjeK8RESFxjoiYXTSLqjZjENQGNovcT1yBuuIELoGzKJigDAiLrgDPAwGzd1V1V3x/V+3R39Ux3zzRQj79xhqo6S50663ve9..."
+[1536934836.728][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-3"
+}
+[1536934836.728][INFO]: Waiting for pending navigations...
+[1536934836.730][INFO]: Done waiting for pending navigations. Status: ok
+[1536934836.750][INFO]: Waiting for pending navigations...
+[1536934836.758][INFO]: Done waiting for pending navigations. Status: ok
+[1536934836.758][INFO]: RESPONSE IsElementEnabled stale element reference: element is not attached to the page document
+  (Session info: chrome=68.0.3440.84)
+[1536934836.770][INFO]: COMMAND GetWindow {
+
+}
+[1536934836.770][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934836.776][INFO]: COMMAND GetWindows {
+
+}
+[1536934836.777][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934837.287][INFO]: COMMAND GetWindows {
+
+}
+[1536934837.288][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934837.793][INFO]: COMMAND GetWindows {
+
+}
+[1536934837.794][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934837.800][INFO]: COMMAND Screenshot {
+
+}
+[1536934837.801][INFO]: Waiting for pending navigations...
+[1536934837.802][INFO]: Done waiting for pending navigations. Status: ok
+[1536934837.979][INFO]: Waiting for pending navigations...
+[1536934837.980][INFO]: Done waiting for pending navigations. Status: ok
+[1536934837.980][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOydeZwU1bn3v6eqepmVdQSGTWTRQWVRUAQFowFJBGPEqFf0XiEmQuKaxOV6URNFb8QkrhHcwPuKigZ33CDKoiwqm6AsAiLrgDPAwGzd1V1V7x/V+3R39Ux3zzRQPz/jDFV1znnq1Fl/5..."
+[1536934838.000][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//md-card[contains(@class,'totalScenarioCard')]"
+}
+[1536934838.000][INFO]: Waiting for pending navigations...
+[1536934838.001][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.034][INFO]: Waiting for pending navigations...
+[1536934838.036][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.036][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-4"
+}
+[1536934838.043][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-4",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-4"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934838.043][INFO]: Waiting for pending navigations...
+[1536934838.045][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.051][INFO]: Waiting for pending navigations...
+[1536934838.059][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.059][INFO]: RESPONSE ExecuteScript
+[1536934838.087][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934838.087][INFO]: Waiting for pending navigations...
+[1536934838.089][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.093][INFO]: Waiting for pending navigations...
+[1536934838.094][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.094][INFO]: RESPONSE ExecuteScript "complete"
+[1536934838.103][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//md-card[contains(@class,'totalScenarioCard')]"
+}
+[1536934838.103][INFO]: Waiting for pending navigations...
+[1536934838.104][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.126][INFO]: Waiting for pending navigations...
+[1536934838.127][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.127][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-4"
+} ]
+[1536934838.131][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-4"
+}
+[1536934838.131][INFO]: Waiting for pending navigations...
+[1536934838.132][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.145][INFO]: Waiting for pending navigations...
+[1536934838.146][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.146][INFO]: RESPONSE IsElementDisplayed true
+[1536934838.149][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-4"
+}
+[1536934838.149][INFO]: Waiting for pending navigations...
+[1536934838.150][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.159][INFO]: Waiting for pending navigations...
+[1536934838.159][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.159][INFO]: RESPONSE IsElementEnabled true
+[1536934838.163][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//md-card[contains(@class,'totalScenarioCard')]"
+}
+[1536934838.163][INFO]: Waiting for pending navigations...
+[1536934838.164][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.171][INFO]: Waiting for pending navigations...
+[1536934838.172][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.172][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-4"
+}
+[1536934838.175][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-4"
+}
+[1536934838.175][INFO]: Waiting for pending navigations...
+[1536934838.176][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.489][INFO]: Waiting for pending navigations...
+[1536934838.632][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.632][INFO]: RESPONSE ClickElement
+[1536934838.640][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934838.640][INFO]: Waiting for pending navigations...
+[1536934838.653][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.666][INFO]: Waiting for pending navigations...
+[1536934838.669][INFO]: Done waiting for pending navigations. Status: ok
+[1536934838.669][INFO]: RESPONSE ExecuteScript "complete"
+[1536934838.673][INFO]: COMMAND GetWindow {
+
+}
+[1536934838.673][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934838.677][INFO]: COMMAND GetWindows {
+
+}
+[1536934838.677][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934839.182][INFO]: COMMAND GetWindows {
+
+}
+[1536934839.184][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934839.690][INFO]: COMMAND GetWindows {
+
+}
+[1536934839.692][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934839.700][INFO]: COMMAND Screenshot {
+
+}
+[1536934839.700][INFO]: Waiting for pending navigations...
+[1536934839.702][INFO]: Done waiting for pending navigations. Status: ok
+[1536934839.841][INFO]: Waiting for pending navigations...
+[1536934839.842][INFO]: Done waiting for pending navigations. Status: ok
+[1536934839.842][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOydeZgU1b3+P7V0V88KDIzAMIAKooMREDcEBZcfSCIYI0S8oLlKNErifhP0JkASt2swN+4BjQFvXKIGlygahSiCgqggiMqIgMg6wAwwzNbdVV1Vvz+q9+nu6p7unumBfnl4ZqaqzlKnz..."
+[1536934839.859][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934839.859][INFO]: Waiting for pending navigations...
+[1536934839.860][INFO]: Done waiting for pending navigations. Status: ok
+[1536934839.863][INFO]: Waiting for pending navigations...
+[1536934839.864][INFO]: Done waiting for pending navigations. Status: ok
+[1536934839.864][INFO]: RESPONSE ExecuteScript "complete"
+[1536934839.867][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-splitbutton')]/button[contains(@class,'ui-button-text-icon-left')]/span[contains(@class,'ui-button-text')]"
+}
+[1536934839.867][INFO]: Waiting for pending navigations...
+[1536934839.868][INFO]: Done waiting for pending navigations. Status: ok
+[1536934839.884][INFO]: Waiting for pending navigations...
+[1536934839.885][INFO]: Done waiting for pending navigations. Status: ok
+[1536934839.885][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-5"
+}
+[1536934839.888][INFO]: COMMAND GetElementText {
+   "id": "0.7989907836082091-5"
+}
+[1536934839.888][INFO]: Waiting for pending navigations...
+[1536934839.889][INFO]: Done waiting for pending navigations. Status: ok
+[1536934839.905][INFO]: Waiting for pending navigations...
+[1536934839.912][INFO]: Done waiting for pending navigations. Status: ok
+[1536934839.912][INFO]: RESPONSE GetElementText "cavisson"
+[1536934839.915][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-splitbutton')]/button[contains(@class,'ui-button-text-icon-left')]/span[contains(@class,'ui-button-text')]"
+}
+[1536934839.915][INFO]: Waiting for pending navigations...
+[1536934839.916][INFO]: Done waiting for pending navigations. Status: ok
+[1536934839.924][INFO]: Waiting for pending navigations...
+[1536934839.925][INFO]: Done waiting for pending navigations. Status: ok
+[1536934839.925][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-5"
+}
+[1536934839.928][INFO]: COMMAND GetElementText {
+   "id": "0.7989907836082091-5"
+}
+[1536934839.928][INFO]: Waiting for pending navigations...
+[1536934839.929][INFO]: Done waiting for pending navigations. Status: ok
+[1536934839.936][INFO]: Waiting for pending navigations...
+[1536934839.937][INFO]: Done waiting for pending navigations. Status: ok
+[1536934839.937][INFO]: RESPONSE GetElementText "cavisson"
+[1536934839.940][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934839.940][INFO]: Waiting for pending navigations...
+[1536934839.941][INFO]: Done waiting for pending navigations. Status: ok
+[1536934839.943][INFO]: Waiting for pending navigations...
+[1536934839.943][INFO]: Done waiting for pending navigations. Status: ok
+[1536934839.943][INFO]: RESPONSE ExecuteScript "complete"
+[1536934839.946][INFO]: COMMAND GetWindow {
+
+}
+[1536934839.946][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934839.949][INFO]: COMMAND GetWindows {
+
+}
+[1536934839.949][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934840.455][INFO]: COMMAND GetWindows {
+
+}
+[1536934840.457][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934840.965][INFO]: COMMAND GetWindows {
+
+}
+[1536934840.967][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934840.976][INFO]: COMMAND Screenshot {
+
+}
+[1536934840.976][INFO]: Waiting for pending navigations...
+[1536934840.978][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.144][INFO]: Waiting for pending navigations...
+[1536934841.146][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.146][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOydeZgU1b3+P7X3rMDACAybCqKDEXBHUHD5gSRKYsSoVzQ3Eo2QaFxuot4ETeJ2DeZGcQMTg97EPbiiiUoUQUGNIDgqiIAoO8wAw2zdXdVV9fujep/uru7p7pke6JeHZ2aq6ix16izf8..."
+[1536934841.167][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//button[@label='Create']"
+}
+[1536934841.168][INFO]: Waiting for pending navigations...
+[1536934841.168][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.186][INFO]: Waiting for pending navigations...
+[1536934841.186][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.186][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-6"
+}
+[1536934841.190][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-6",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-6"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934841.190][INFO]: Waiting for pending navigations...
+[1536934841.190][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.195][INFO]: Waiting for pending navigations...
+[1536934841.196][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.196][INFO]: RESPONSE ExecuteScript
+[1536934841.203][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934841.203][INFO]: Waiting for pending navigations...
+[1536934841.206][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.208][INFO]: Waiting for pending navigations...
+[1536934841.209][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.209][INFO]: RESPONSE ExecuteScript "complete"
+[1536934841.213][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//button[@label='Create']"
+}
+[1536934841.213][INFO]: Waiting for pending navigations...
+[1536934841.214][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.228][INFO]: Waiting for pending navigations...
+[1536934841.229][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.229][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-6"
+} ]
+[1536934841.232][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-6"
+}
+[1536934841.232][INFO]: Waiting for pending navigations...
+[1536934841.233][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.246][INFO]: Waiting for pending navigations...
+[1536934841.247][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.247][INFO]: RESPONSE IsElementDisplayed true
+[1536934841.250][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-6"
+}
+[1536934841.250][INFO]: Waiting for pending navigations...
+[1536934841.251][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.263][INFO]: Waiting for pending navigations...
+[1536934841.264][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.264][INFO]: RESPONSE IsElementEnabled true
+[1536934841.267][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//button[@label='Create']"
+}
+[1536934841.267][INFO]: Waiting for pending navigations...
+[1536934841.268][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.275][INFO]: Waiting for pending navigations...
+[1536934841.276][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.276][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-6"
+}
+[1536934841.279][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-6"
+}
+[1536934841.279][INFO]: Waiting for pending navigations...
+[1536934841.280][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.358][INFO]: Waiting for pending navigations...
+[1536934841.362][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.362][INFO]: RESPONSE ClickElement
+[1536934841.366][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934841.366][INFO]: Waiting for pending navigations...
+[1536934841.368][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.372][INFO]: Waiting for pending navigations...
+[1536934841.372][INFO]: Done waiting for pending navigations. Status: ok
+[1536934841.372][INFO]: RESPONSE ExecuteScript "complete"
+[1536934841.376][INFO]: COMMAND GetWindow {
+
+}
+[1536934841.376][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934841.380][INFO]: COMMAND GetWindows {
+
+}
+[1536934841.385][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934841.891][INFO]: COMMAND GetWindows {
+
+}
+[1536934841.893][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934842.399][INFO]: COMMAND GetWindows {
+
+}
+[1536934842.401][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934842.409][INFO]: COMMAND Screenshot {
+
+}
+[1536934842.409][INFO]: Waiting for pending navigations...
+[1536934842.412][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.568][INFO]: Waiting for pending navigations...
+[1536934842.569][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.569][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eZAcx32g+9XRx1yYAxgAAwxuYAACBEgCIEATFMBLh0mJpE2vJJt6lnafbO861vGeN9aOd/y1+yLWEbsb9kZ4Q/auHWuZtmTJIUqkLFKCJB4ACZggcRAgMcR9DGYwgxlgDszRRx35/..."
+[1536934842.585][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]"
+}
+[1536934842.585][INFO]: Waiting for pending navigations...
+[1536934842.587][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.602][INFO]: Waiting for pending navigations...
+[1536934842.603][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.603][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-7"
+}
+[1536934842.606][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-7",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-7"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934842.606][INFO]: Waiting for pending navigations...
+[1536934842.608][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.611][INFO]: Waiting for pending navigations...
+[1536934842.611][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.611][INFO]: RESPONSE ExecuteScript
+[1536934842.614][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934842.614][INFO]: Waiting for pending navigations...
+[1536934842.615][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.616][INFO]: Waiting for pending navigations...
+[1536934842.617][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.617][INFO]: RESPONSE ExecuteScript "complete"
+[1536934842.621][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]"
+}
+[1536934842.621][INFO]: Waiting for pending navigations...
+[1536934842.621][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.636][INFO]: Waiting for pending navigations...
+[1536934842.636][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.636][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-7"
+} ]
+[1536934842.640][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-7"
+}
+[1536934842.640][INFO]: Waiting for pending navigations...
+[1536934842.640][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.654][INFO]: Waiting for pending navigations...
+[1536934842.654][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.654][INFO]: RESPONSE IsElementDisplayed true
+[1536934842.657][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-7"
+}
+[1536934842.657][INFO]: Waiting for pending navigations...
+[1536934842.658][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.666][INFO]: Waiting for pending navigations...
+[1536934842.667][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.667][INFO]: RESPONSE IsElementEnabled true
+[1536934842.670][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]"
+}
+[1536934842.670][INFO]: Waiting for pending navigations...
+[1536934842.671][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.679][INFO]: Waiting for pending navigations...
+[1536934842.680][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.680][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-7"
+}
+[1536934842.683][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-7"
+}
+[1536934842.683][INFO]: Waiting for pending navigations...
+[1536934842.684][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.770][INFO]: Waiting for pending navigations...
+[1536934842.780][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.780][INFO]: RESPONSE ClickElement
+[1536934842.784][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934842.785][INFO]: Waiting for pending navigations...
+[1536934842.787][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.790][INFO]: Waiting for pending navigations...
+[1536934842.791][INFO]: Done waiting for pending navigations. Status: ok
+[1536934842.791][INFO]: RESPONSE ExecuteScript "complete"
+[1536934842.794][INFO]: COMMAND GetWindow {
+
+}
+[1536934842.794][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934842.796][INFO]: COMMAND GetWindows {
+
+}
+[1536934842.797][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934843.302][INFO]: COMMAND GetWindows {
+
+}
+[1536934843.304][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934843.813][INFO]: COMMAND GetWindows {
+
+}
+[1536934843.814][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934843.822][INFO]: COMMAND Screenshot {
+
+}
+[1536934843.822][INFO]: Waiting for pending navigations...
+[1536934843.824][INFO]: Done waiting for pending navigations. Status: ok
+[1536934843.995][INFO]: Waiting for pending navigations...
+[1536934843.996][INFO]: Done waiting for pending navigations. Status: ok
+[1536934843.996][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eZAcx32g+2VV9TEX5gAGwACDGxiAAAGSAAjQBAXw0mFSImnTK8mmnqXdJ9u7jnW854214x1/7b6IdcTuhr0R3tBq145dmbZkySFKpCxSgiQeAAmYIHEQIAHiPgYDzGAGmAPTM33Uk..."
+[1536934844.011][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul/li/span[text()='default']"
+}
+[1536934844.011][INFO]: Waiting for pending navigations...
+[1536934844.012][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.029][INFO]: Waiting for pending navigations...
+[1536934844.029][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.029][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-8"
+}
+[1536934844.032][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-8",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-8"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934844.032][INFO]: Waiting for pending navigations...
+[1536934844.033][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.036][INFO]: Waiting for pending navigations...
+[1536934844.043][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.043][INFO]: RESPONSE ExecuteScript
+[1536934844.049][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934844.049][INFO]: Waiting for pending navigations...
+[1536934844.050][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.052][INFO]: Waiting for pending navigations...
+[1536934844.054][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.054][INFO]: RESPONSE ExecuteScript "complete"
+[1536934844.057][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul/li/span[text()='default']"
+}
+[1536934844.057][INFO]: Waiting for pending navigations...
+[1536934844.059][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.073][INFO]: Waiting for pending navigations...
+[1536934844.075][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.075][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-8"
+} ]
+[1536934844.078][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-8"
+}
+[1536934844.078][INFO]: Waiting for pending navigations...
+[1536934844.079][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.092][INFO]: Waiting for pending navigations...
+[1536934844.093][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.093][INFO]: RESPONSE IsElementDisplayed true
+[1536934844.096][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-8"
+}
+[1536934844.096][INFO]: Waiting for pending navigations...
+[1536934844.097][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.105][INFO]: Waiting for pending navigations...
+[1536934844.106][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.106][INFO]: RESPONSE IsElementEnabled true
+[1536934844.109][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul/li/span[text()='default']"
+}
+[1536934844.109][INFO]: Waiting for pending navigations...
+[1536934844.110][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.118][INFO]: Waiting for pending navigations...
+[1536934844.119][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.119][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-8"
+}
+[1536934844.122][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-8"
+}
+[1536934844.122][INFO]: Waiting for pending navigations...
+[1536934844.122][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.211][INFO]: Waiting for pending navigations...
+[1536934844.222][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.222][INFO]: RESPONSE ClickElement
+[1536934844.225][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934844.225][INFO]: Waiting for pending navigations...
+[1536934844.227][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.228][INFO]: Waiting for pending navigations...
+[1536934844.229][INFO]: Done waiting for pending navigations. Status: ok
+[1536934844.229][INFO]: RESPONSE ExecuteScript "complete"
+[1536934844.232][INFO]: COMMAND GetWindow {
+
+}
+[1536934844.232][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934844.235][INFO]: COMMAND GetWindows {
+
+}
+[1536934844.237][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934844.743][INFO]: COMMAND GetWindows {
+
+}
+[1536934844.745][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934845.251][INFO]: COMMAND GetWindows {
+
+}
+[1536934845.251][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934845.255][INFO]: COMMAND Screenshot {
+
+}
+[1536934845.255][INFO]: Waiting for pending navigations...
+[1536934845.256][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.389][INFO]: Waiting for pending navigations...
+[1536934845.390][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.390][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eXBc132g+92lF2zEQoIkSHAnQYoUSYmkSEWUSW1eItmSEmUsJ/KLPfOcZF5qUu9lambqLX9NXlVSlUxlpipTnrxJKnGU2LFTli05lmxa1kJKZESJi0iJEPcFBAgQIAGCaADdfZfz/..."
+[1536934845.407][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]"
+}
+[1536934845.407][INFO]: Waiting for pending navigations...
+[1536934845.408][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.423][INFO]: Waiting for pending navigations...
+[1536934845.423][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.423][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-9"
+}
+[1536934845.426][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-9",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-9"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934845.426][INFO]: Waiting for pending navigations...
+[1536934845.427][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.430][INFO]: Waiting for pending navigations...
+[1536934845.430][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.430][INFO]: RESPONSE ExecuteScript
+[1536934845.433][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934845.433][INFO]: Waiting for pending navigations...
+[1536934845.434][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.435][INFO]: Waiting for pending navigations...
+[1536934845.436][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.436][INFO]: RESPONSE ExecuteScript "complete"
+[1536934845.438][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]"
+}
+[1536934845.438][INFO]: Waiting for pending navigations...
+[1536934845.439][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.454][INFO]: Waiting for pending navigations...
+[1536934845.455][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.455][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-9"
+} ]
+[1536934845.457][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-9"
+}
+[1536934845.458][INFO]: Waiting for pending navigations...
+[1536934845.459][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.472][INFO]: Waiting for pending navigations...
+[1536934845.473][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.473][INFO]: RESPONSE IsElementDisplayed true
+[1536934845.476][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-9"
+}
+[1536934845.476][INFO]: Waiting for pending navigations...
+[1536934845.476][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.485][INFO]: Waiting for pending navigations...
+[1536934845.485][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.485][INFO]: RESPONSE IsElementEnabled true
+[1536934845.488][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]"
+}
+[1536934845.488][INFO]: Waiting for pending navigations...
+[1536934845.489][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.497][INFO]: Waiting for pending navigations...
+[1536934845.499][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.499][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-9"
+}
+[1536934845.502][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-9"
+}
+[1536934845.502][INFO]: Waiting for pending navigations...
+[1536934845.503][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.598][INFO]: Waiting for pending navigations...
+[1536934845.614][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.614][INFO]: RESPONSE ClickElement
+[1536934845.617][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934845.617][INFO]: Waiting for pending navigations...
+[1536934845.620][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.621][INFO]: Waiting for pending navigations...
+[1536934845.622][INFO]: Done waiting for pending navigations. Status: ok
+[1536934845.622][INFO]: RESPONSE ExecuteScript "complete"
+[1536934845.624][INFO]: COMMAND GetWindow {
+
+}
+[1536934845.624][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934845.627][INFO]: COMMAND GetWindows {
+
+}
+[1536934845.628][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934846.135][INFO]: COMMAND GetWindows {
+
+}
+[1536934846.138][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934846.645][INFO]: COMMAND GetWindows {
+
+}
+[1536934846.647][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934846.656][INFO]: COMMAND Screenshot {
+
+}
+[1536934846.656][INFO]: Waiting for pending navigations...
+[1536934846.659][INFO]: Done waiting for pending navigations. Status: ok
+[1536934846.805][INFO]: Waiting for pending navigations...
+[1536934846.806][INFO]: Done waiting for pending navigations. Status: ok
+[1536934846.806][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eZBc132Y+92ll9kwCzAABhjswAAECJAEQIAmSEAUqcUkRdKhI8mmnqXkKXbiius9p5LUW/5KXlVclaScVDklO5ErkWlLllyiRMoiJYjiApCACRILARJD7MtgBjOYAWbBLL3c5bw/b..."
+[1536934846.820][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul//span[text()='default']"
+}
+[1536934846.820][INFO]: Waiting for pending navigations...
+[1536934846.821][INFO]: Done waiting for pending navigations. Status: ok
+[1536934846.836][INFO]: Waiting for pending navigations...
+[1536934846.843][INFO]: Done waiting for pending navigations. Status: ok
+[1536934846.843][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-10"
+}
+[1536934846.846][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-10",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-10"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934846.846][INFO]: Waiting for pending navigations...
+[1536934846.847][INFO]: Done waiting for pending navigations. Status: ok
+[1536934846.850][INFO]: Waiting for pending navigations...
+[1536934846.850][INFO]: Done waiting for pending navigations. Status: ok
+[1536934846.850][INFO]: RESPONSE ExecuteScript
+[1536934846.854][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934846.854][INFO]: Waiting for pending navigations...
+[1536934846.854][INFO]: Done waiting for pending navigations. Status: ok
+[1536934846.856][INFO]: Waiting for pending navigations...
+[1536934846.857][INFO]: Done waiting for pending navigations. Status: ok
+[1536934846.857][INFO]: RESPONSE ExecuteScript "complete"
+[1536934846.860][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul//span[text()='default']"
+}
+[1536934846.860][INFO]: Waiting for pending navigations...
+[1536934846.861][INFO]: Done waiting for pending navigations. Status: ok
+[1536934846.876][INFO]: Waiting for pending navigations...
+[1536934846.877][INFO]: Done waiting for pending navigations. Status: ok
+[1536934846.877][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-10"
+} ]
+[1536934846.880][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-10"
+}
+[1536934846.880][INFO]: Waiting for pending navigations...
+[1536934846.881][INFO]: Done waiting for pending navigations. Status: ok
+[1536934846.895][INFO]: Waiting for pending navigations...
+[1536934846.896][INFO]: Done waiting for pending navigations. Status: ok
+[1536934846.896][INFO]: RESPONSE IsElementDisplayed true
+[1536934846.899][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-10"
+}
+[1536934846.899][INFO]: Waiting for pending navigations...
+[1536934846.900][INFO]: Done waiting for pending navigations. Status: ok
+[1536934846.909][INFO]: Waiting for pending navigations...
+[1536934846.910][INFO]: Done waiting for pending navigations. Status: ok
+[1536934846.910][INFO]: RESPONSE IsElementEnabled true
+[1536934846.912][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul//span[text()='default']"
+}
+[1536934846.912][INFO]: Waiting for pending navigations...
+[1536934846.913][INFO]: Done waiting for pending navigations. Status: ok
+[1536934846.921][INFO]: Waiting for pending navigations...
+[1536934846.922][INFO]: Done waiting for pending navigations. Status: ok
+[1536934846.922][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-10"
+}
+[1536934846.924][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-10"
+}
+[1536934846.924][INFO]: Waiting for pending navigations...
+[1536934846.925][INFO]: Done waiting for pending navigations. Status: ok
+[1536934847.001][INFO]: Waiting for pending navigations...
+[1536934847.005][INFO]: Done waiting for pending navigations. Status: ok
+[1536934847.005][INFO]: RESPONSE ClickElement
+[1536934847.009][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934847.009][INFO]: Waiting for pending navigations...
+[1536934847.010][INFO]: Done waiting for pending navigations. Status: ok
+[1536934847.013][INFO]: Waiting for pending navigations...
+[1536934847.014][INFO]: Done waiting for pending navigations. Status: ok
+[1536934847.014][INFO]: RESPONSE ExecuteScript "complete"
+[1536934847.016][INFO]: COMMAND GetWindow {
+
+}
+[1536934847.016][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934847.019][INFO]: COMMAND GetWindows {
+
+}
+[1536934847.019][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934847.525][INFO]: COMMAND GetWindows {
+
+}
+[1536934847.527][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934848.033][INFO]: COMMAND GetWindows {
+
+}
+[1536934848.035][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934848.043][INFO]: COMMAND Screenshot {
+
+}
+[1536934848.043][INFO]: Waiting for pending navigations...
+[1536934848.046][INFO]: Done waiting for pending navigations. Status: ok
+[1536934848.199][INFO]: Waiting for pending navigations...
+[1536934848.200][INFO]: Done waiting for pending navigations. Status: ok
+[1536934848.200][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eZAc132g+eVRR1/oA2gADTRuoAE2CJAEQIAmKEAUqcMkRdJDjySbWkszKx/rGMeuHTMTuzv/7MxGjGNnJsYTYYessR22TFuy5BAlUhYpQRIPgARMkDgIkGjiPhrd6EY30I1GH3Xk8..."
+[1536934848.214][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934848.214][INFO]: Waiting for pending navigations...
+[1536934848.215][INFO]: Done waiting for pending navigations. Status: ok
+[1536934848.216][INFO]: Waiting for pending navigations...
+[1536934848.217][INFO]: Done waiting for pending navigations. Status: ok
+[1536934848.217][INFO]: RESPONSE ExecuteScript "complete"
+[1536934848.220][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='Scenario Name ']/parent::div/descendant::input"
+}
+[1536934848.220][INFO]: Waiting for pending navigations...
+[1536934848.221][INFO]: Done waiting for pending navigations. Status: ok
+[1536934848.238][INFO]: Waiting for pending navigations...
+[1536934848.240][INFO]: Done waiting for pending navigations. Status: ok
+[1536934848.240][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-11"
+}
+[1536934848.244][INFO]: COMMAND ClearElement {
+   "id": "0.7989907836082091-11"
+}
+[1536934848.244][INFO]: Waiting for pending navigations...
+[1536934848.246][INFO]: Done waiting for pending navigations. Status: ok
+[1536934848.269][INFO]: Waiting for pending navigations...
+[1536934848.271][INFO]: Done waiting for pending navigations. Status: ok
+[1536934848.271][INFO]: RESPONSE ClearElement
+[1536934848.274][INFO]: COMMAND TypeElement {
+   "id": "0.7989907836082091-11",
+   "value": [ "test_biswajit20180914_195019" ]
+}
+[1536934848.274][INFO]: Waiting for pending navigations...
+[1536934848.276][INFO]: Done waiting for pending navigations. Status: ok
+[1536934849.166][INFO]: Waiting for pending navigations...
+[1536934849.167][INFO]: Done waiting for pending navigations. Status: ok
+[1536934849.167][INFO]: RESPONSE TypeElement
+[1536934849.169][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934849.169][INFO]: Waiting for pending navigations...
+[1536934849.170][INFO]: Done waiting for pending navigations. Status: ok
+[1536934849.171][INFO]: Waiting for pending navigations...
+[1536934849.172][INFO]: Done waiting for pending navigations. Status: ok
+[1536934849.172][INFO]: RESPONSE ExecuteScript "complete"
+[1536934849.175][INFO]: COMMAND GetWindow {
+
+}
+[1536934849.175][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934849.177][INFO]: COMMAND GetWindows {
+
+}
+[1536934849.178][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934849.683][INFO]: COMMAND GetWindows {
+
+}
+[1536934849.684][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934850.190][INFO]: COMMAND GetWindows {
+
+}
+[1536934850.192][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934850.198][INFO]: COMMAND Screenshot {
+
+}
+[1536934850.198][INFO]: Waiting for pending navigations...
+[1536934850.199][INFO]: Done waiting for pending navigations. Status: ok
+[1536934850.343][INFO]: Waiting for pending navigations...
+[1536934850.344][INFO]: Done waiting for pending navigations. Status: ok
+[1536934850.344][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eXBc132g+92lF2zEQoIkSHAnQYoUKYmkSEWUSMmSl0iypIwylhP5xZ55niQvNan3nJqk3rz31+RVjasyU8lUZcrxJKkZR4kdO2XZkmPJpm0tpERGlLiIlEhxAxcQIECABAhi6eUu5..."
+[1536934850.361][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//footer/descendant::button[@label='Next']"
+}
+[1536934850.361][INFO]: Waiting for pending navigations...
+[1536934850.362][INFO]: Done waiting for pending navigations. Status: ok
+[1536934850.376][INFO]: Waiting for pending navigations...
+[1536934850.377][INFO]: Done waiting for pending navigations. Status: ok
+[1536934850.377][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-12"
+}
+[1536934850.380][INFO]: COMMAND GetUrl {
+
+}
+[1536934850.380][INFO]: Waiting for pending navigations...
+[1536934850.381][INFO]: Done waiting for pending navigations. Status: ok
+[1536934850.382][INFO]: Waiting for pending navigations...
+[1536934850.383][INFO]: Done waiting for pending navigations. Status: ok
+[1536934850.383][INFO]: RESPONSE GetUrl "https://10.10.30.15:4433/ProductUI/#/home/openTotalScenario"
+[1536934850.387][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934850.387][INFO]: Waiting for pending navigations...
+[1536934850.387][INFO]: Done waiting for pending navigations. Status: ok
+[1536934850.389][INFO]: Waiting for pending navigations...
+[1536934850.389][INFO]: Done waiting for pending navigations. Status: ok
+[1536934850.389][INFO]: RESPONSE ExecuteScript "complete"
+[1536934850.392][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-12"
+}
+[1536934850.392][INFO]: Waiting for pending navigations...
+[1536934850.393][INFO]: Done waiting for pending navigations. Status: ok
+[1536934850.470][INFO]: Waiting for pending navigations...
+[1536934850.475][INFO]: Done waiting for pending navigations. Status: ok
+[1536934850.475][INFO]: RESPONSE ClickElement
+[1536934850.478][INFO]: COMMAND GetWindow {
+
+}
+[1536934850.478][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934850.481][INFO]: COMMAND GetWindows {
+
+}
+[1536934850.482][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934850.987][INFO]: COMMAND GetWindows {
+
+}
+[1536934850.987][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934851.492][INFO]: COMMAND GetWindows {
+
+}
+[1536934851.493][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934851.497][INFO]: COMMAND Screenshot {
+
+}
+[1536934851.499][INFO]: Waiting for pending navigations...
+[1536934851.586][INFO]: Done waiting for pending navigations. Status: ok
+[1536934851.734][INFO]: Waiting for pending navigations...
+[1536934851.736][INFO]: Done waiting for pending navigations. Status: ok
+[1536934851.736][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOydeXwU9f3/nzOzV5JNAiHhCKcG0MQKiKgcCgoFYhW1QsWC+lOqAlbr0Yp+LWLrVcVa74LWgm2FisUTtCiVSzlULqMSueVKgISQO7uzuzO/P/be7O7sZneTDezLByaZmc/n857PfM7X5..."
+[1536934851.746][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-12"
+}
+[1536934851.746][INFO]: Waiting for pending navigations...
+[1536934851.747][INFO]: Done waiting for pending navigations. Status: ok
+[1536934851.756][INFO]: Waiting for pending navigations...
+[1536934851.757][INFO]: Done waiting for pending navigations. Status: ok
+[1536934851.757][INFO]: RESPONSE IsElementEnabled stale element reference: element is not attached to the page document
+  (Session info: chrome=68.0.3440.84)
+[1536934851.761][INFO]: COMMAND GetWindow {
+
+}
+[1536934851.761][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934851.764][INFO]: COMMAND GetWindows {
+
+}
+[1536934851.764][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934852.268][INFO]: COMMAND GetWindows {
+
+}
+[1536934852.268][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934852.773][INFO]: COMMAND GetWindows {
+
+}
+[1536934852.783][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934852.786][INFO]: COMMAND Screenshot {
+
+}
+[1536934852.787][INFO]: Waiting for pending navigations...
+[1536934852.791][INFO]: Done waiting for pending navigations. Status: ok
+[1536934852.911][INFO]: Waiting for pending navigations...
+[1536934852.918][INFO]: Done waiting for pending navigations. Status: ok
+[1536934852.918][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOydeXxU5b3Gv+85Z85MJgshgQQCyBqUVWTRIMpyFWtBRKStVIVWq9Za76279Zau0rrXaqu2aosXbYu2ghsuoAVRBGSRHdlkkQAJJISss55z/5h9MjNnJjOTBebhEyaZc959f97fIp761..."
+[1536934857.934][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//button[@title='Add Group']"
+}
+[1536934857.946][INFO]: Waiting for pending navigations...
+[1536934857.948][INFO]: Done waiting for pending navigations. Status: ok
+[1536934857.985][INFO]: Waiting for pending navigations...
+[1536934857.986][INFO]: Done waiting for pending navigations. Status: ok
+[1536934857.986][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-13"
+}
+[1536934857.990][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-13",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-13"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934857.990][INFO]: Waiting for pending navigations...
+[1536934857.991][INFO]: Done waiting for pending navigations. Status: ok
+[1536934857.994][INFO]: Waiting for pending navigations...
+[1536934857.997][INFO]: Done waiting for pending navigations. Status: ok
+[1536934857.998][INFO]: RESPONSE ExecuteScript
+[1536934858.001][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934858.002][INFO]: Waiting for pending navigations...
+[1536934858.004][INFO]: Done waiting for pending navigations. Status: ok
+[1536934858.007][INFO]: Waiting for pending navigations...
+[1536934858.008][INFO]: Done waiting for pending navigations. Status: ok
+[1536934858.008][INFO]: RESPONSE ExecuteScript "complete"
+[1536934858.011][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//button[@title='Add Group']"
+}
+[1536934858.011][INFO]: Waiting for pending navigations...
+[1536934858.012][INFO]: Done waiting for pending navigations. Status: ok
+[1536934858.027][INFO]: Waiting for pending navigations...
+[1536934858.028][INFO]: Done waiting for pending navigations. Status: ok
+[1536934858.028][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-13"
+} ]
+[1536934858.031][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-13"
+}
+[1536934858.031][INFO]: Waiting for pending navigations...
+[1536934858.032][INFO]: Done waiting for pending navigations. Status: ok
+[1536934858.045][INFO]: Waiting for pending navigations...
+[1536934858.046][INFO]: Done waiting for pending navigations. Status: ok
+[1536934858.046][INFO]: RESPONSE IsElementDisplayed true
+[1536934858.049][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-13"
+}
+[1536934858.049][INFO]: Waiting for pending navigations...
+[1536934858.050][INFO]: Done waiting for pending navigations. Status: ok
+[1536934858.059][INFO]: Waiting for pending navigations...
+[1536934858.060][INFO]: Done waiting for pending navigations. Status: ok
+[1536934858.060][INFO]: RESPONSE IsElementEnabled true
+[1536934858.063][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//button[@title='Add Group']"
+}
+[1536934858.063][INFO]: Waiting for pending navigations...
+[1536934858.063][INFO]: Done waiting for pending navigations. Status: ok
+[1536934858.071][INFO]: Waiting for pending navigations...
+[1536934858.072][INFO]: Done waiting for pending navigations. Status: ok
+[1536934858.072][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-13"
+}
+[1536934858.075][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-13"
+}
+[1536934858.075][INFO]: Waiting for pending navigations...
+[1536934858.076][INFO]: Done waiting for pending navigations. Status: ok
+[1536934858.208][INFO]: Waiting for pending navigations...
+[1536934858.214][INFO]: Done waiting for pending navigations. Status: ok
+[1536934858.214][INFO]: RESPONSE ClickElement
+[1536934858.217][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934858.217][INFO]: Waiting for pending navigations...
+[1536934858.219][INFO]: Done waiting for pending navigations. Status: ok
+[1536934858.222][INFO]: Waiting for pending navigations...
+[1536934858.224][INFO]: Done waiting for pending navigations. Status: ok
+[1536934858.224][INFO]: RESPONSE ExecuteScript "complete"
+[1536934858.227][INFO]: COMMAND GetWindow {
+
+}
+[1536934858.227][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934858.230][INFO]: COMMAND GetWindows {
+
+}
+[1536934858.231][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934858.736][INFO]: COMMAND GetWindows {
+
+}
+[1536934858.738][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934859.244][INFO]: COMMAND GetWindows {
+
+}
+[1536934859.246][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934859.253][INFO]: COMMAND Screenshot {
+
+}
+[1536934859.253][INFO]: Waiting for pending navigations...
+[1536934859.256][INFO]: Done waiting for pending navigations. Status: ok
+[1536934859.388][INFO]: Waiting for pending navigations...
+[1536934859.389][INFO]: Done waiting for pending navigations. Status: ok
+[1536934859.389][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eXBc133v+blLb1iIjdhIAFxAACTATSRFUiJFiiJlyZQsyaYjyZYntt9znEwqrhmnktRMzR9TL1P1XJWkkvcqrxxP7ElsxfL2tFsbtXETaXEDd4gACJAEAQIEQOxAb3eZP27v6MbtR..."
+[1536934859.403][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934859.404][INFO]: Waiting for pending navigations...
+[1536934859.404][INFO]: Done waiting for pending navigations. Status: ok
+[1536934859.406][INFO]: Waiting for pending navigations...
+[1536934859.407][INFO]: Done waiting for pending navigations. Status: ok
+[1536934859.407][INFO]: RESPONSE ExecuteScript "complete"
+[1536934859.409][INFO]: COMMAND FindElement {
+   "using": "name",
+   "value": "groupName"
+}
+[1536934859.409][INFO]: Waiting for pending navigations...
+[1536934859.410][INFO]: Done waiting for pending navigations. Status: ok
+[1536934859.425][INFO]: Waiting for pending navigations...
+[1536934859.426][INFO]: Done waiting for pending navigations. Status: ok
+[1536934859.426][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-14"
+}
+[1536934859.428][INFO]: COMMAND ClearElement {
+   "id": "0.7989907836082091-14"
+}
+[1536934859.429][INFO]: Waiting for pending navigations...
+[1536934859.429][INFO]: Done waiting for pending navigations. Status: ok
+[1536934859.447][INFO]: Waiting for pending navigations...
+[1536934859.451][INFO]: Done waiting for pending navigations. Status: ok
+[1536934859.451][INFO]: RESPONSE ClearElement
+[1536934859.456][INFO]: COMMAND TypeElement {
+   "id": "0.7989907836082091-14",
+   "value": [ "GroupTest" ]
+}
+[1536934859.456][INFO]: Waiting for pending navigations...
+[1536934859.457][INFO]: Done waiting for pending navigations. Status: ok
+[1536934859.600][INFO]: Waiting for pending navigations...
+[1536934859.600][INFO]: Done waiting for pending navigations. Status: ok
+[1536934859.600][INFO]: RESPONSE TypeElement
+[1536934859.603][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934859.603][INFO]: Waiting for pending navigations...
+[1536934859.603][INFO]: Done waiting for pending navigations. Status: ok
+[1536934859.605][INFO]: Waiting for pending navigations...
+[1536934859.605][INFO]: Done waiting for pending navigations. Status: ok
+[1536934859.605][INFO]: RESPONSE ExecuteScript "complete"
+[1536934859.608][INFO]: COMMAND GetWindow {
+
+}
+[1536934859.608][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934859.612][INFO]: COMMAND GetWindows {
+
+}
+[1536934859.613][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934860.118][INFO]: COMMAND GetWindows {
+
+}
+[1536934860.120][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934860.627][INFO]: COMMAND GetWindows {
+
+}
+[1536934860.629][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934860.633][INFO]: COMMAND Screenshot {
+
+}
+[1536934860.633][INFO]: Waiting for pending navigations...
+[1536934860.634][INFO]: Done waiting for pending navigations. Status: ok
+[1536934860.762][INFO]: Waiting for pending navigations...
+[1536934860.763][INFO]: Done waiting for pending navigations. Status: ok
+[1536934860.763][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eXBc133v+blLb1iIjdhIAFxAACTATSRFUiJFiiZlyZIsKaYjyZYntt9znEwqqRmnktS8mj+mXqbquSpJJW8qrxxP7ElsxfL2JGuxNloLF4m0uIHiBhIAAZIgQIAAiLWB3u4yf9ze0..."
+[1536934860.775][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//p-radiobutton[@value='Script']"
+}
+[1536934860.775][INFO]: Waiting for pending navigations...
+[1536934860.776][INFO]: Done waiting for pending navigations. Status: ok
+[1536934860.791][INFO]: Waiting for pending navigations...
+[1536934860.792][INFO]: Done waiting for pending navigations. Status: ok
+[1536934860.792][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-15"
+}
+[1536934860.794][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-15",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-15"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934860.794][INFO]: Waiting for pending navigations...
+[1536934860.795][INFO]: Done waiting for pending navigations. Status: ok
+[1536934860.798][INFO]: Waiting for pending navigations...
+[1536934860.799][INFO]: Done waiting for pending navigations. Status: ok
+[1536934860.799][INFO]: RESPONSE ExecuteScript
+[1536934860.801][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934860.801][INFO]: Waiting for pending navigations...
+[1536934860.802][INFO]: Done waiting for pending navigations. Status: ok
+[1536934860.804][INFO]: Waiting for pending navigations...
+[1536934860.805][INFO]: Done waiting for pending navigations. Status: ok
+[1536934860.805][INFO]: RESPONSE ExecuteScript "complete"
+[1536934860.808][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//p-radiobutton[@value='Script']"
+}
+[1536934860.808][INFO]: Waiting for pending navigations...
+[1536934860.809][INFO]: Done waiting for pending navigations. Status: ok
+[1536934860.826][INFO]: Waiting for pending navigations...
+[1536934860.827][INFO]: Done waiting for pending navigations. Status: ok
+[1536934860.827][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-15"
+} ]
+[1536934860.830][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-15"
+}
+[1536934860.830][INFO]: Waiting for pending navigations...
+[1536934860.831][INFO]: Done waiting for pending navigations. Status: ok
+[1536934860.844][INFO]: Waiting for pending navigations...
+[1536934860.845][INFO]: Done waiting for pending navigations. Status: ok
+[1536934860.845][INFO]: RESPONSE IsElementDisplayed true
+[1536934860.848][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-15"
+}
+[1536934860.848][INFO]: Waiting for pending navigations...
+[1536934860.848][INFO]: Done waiting for pending navigations. Status: ok
+[1536934860.858][INFO]: Waiting for pending navigations...
+[1536934860.859][INFO]: Done waiting for pending navigations. Status: ok
+[1536934860.859][INFO]: RESPONSE IsElementEnabled true
+[1536934860.862][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//p-radiobutton[@value='Script']"
+}
+[1536934860.862][INFO]: Waiting for pending navigations...
+[1536934860.864][INFO]: Done waiting for pending navigations. Status: ok
+[1536934860.878][INFO]: Waiting for pending navigations...
+[1536934860.879][INFO]: Done waiting for pending navigations. Status: ok
+[1536934860.879][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-15"
+}
+[1536934860.883][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-15"
+}
+[1536934860.883][INFO]: Waiting for pending navigations...
+[1536934860.884][INFO]: Done waiting for pending navigations. Status: ok
+[1536934861.005][INFO]: Waiting for pending navigations...
+[1536934861.007][INFO]: Done waiting for pending navigations. Status: ok
+[1536934861.007][INFO]: RESPONSE ClickElement
+[1536934861.010][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934861.010][INFO]: Waiting for pending navigations...
+[1536934861.011][INFO]: Done waiting for pending navigations. Status: ok
+[1536934861.013][INFO]: Waiting for pending navigations...
+[1536934861.014][INFO]: Done waiting for pending navigations. Status: ok
+[1536934861.014][INFO]: RESPONSE ExecuteScript "complete"
+[1536934861.016][INFO]: COMMAND GetWindow {
+
+}
+[1536934861.016][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934861.019][INFO]: COMMAND GetWindows {
+
+}
+[1536934861.020][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934861.524][INFO]: COMMAND GetWindows {
+
+}
+[1536934861.526][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934862.033][INFO]: COMMAND GetWindows {
+
+}
+[1536934862.035][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934862.042][INFO]: COMMAND Screenshot {
+
+}
+[1536934862.042][INFO]: Waiting for pending navigations...
+[1536934862.045][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.172][INFO]: Waiting for pending navigations...
+[1536934862.173][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.173][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eXBV153v+9nDmTSgCU0giUFIAonJgAEbDMbg2LEd2x3SjhPndZJ70+m+XZ16N13dXe/V++PV7Vd1u6pvV/e91bfSeZ287sQdZ7qe4wljG7ANMRiEmQRCiEFISEhCs3SmPbw/9pmnf..."
+[1536934862.184][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='User Profile ']/parent::div/descendant::p-dropdown"
+}
+[1536934862.184][INFO]: Waiting for pending navigations...
+[1536934862.185][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.200][INFO]: Waiting for pending navigations...
+[1536934862.201][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.201][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-16"
+}
+[1536934862.204][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-16",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-16"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934862.204][INFO]: Waiting for pending navigations...
+[1536934862.205][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.207][INFO]: Waiting for pending navigations...
+[1536934862.208][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.208][INFO]: RESPONSE ExecuteScript
+[1536934862.211][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934862.211][INFO]: Waiting for pending navigations...
+[1536934862.212][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.213][INFO]: Waiting for pending navigations...
+[1536934862.214][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.214][INFO]: RESPONSE ExecuteScript "complete"
+[1536934862.216][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[text()='User Profile ']/parent::div/descendant::p-dropdown"
+}
+[1536934862.216][INFO]: Waiting for pending navigations...
+[1536934862.217][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.232][INFO]: Waiting for pending navigations...
+[1536934862.232][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.232][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-16"
+} ]
+[1536934862.235][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-16"
+}
+[1536934862.235][INFO]: Waiting for pending navigations...
+[1536934862.236][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.250][INFO]: Waiting for pending navigations...
+[1536934862.254][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.254][INFO]: RESPONSE IsElementDisplayed true
+[1536934862.256][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-16"
+}
+[1536934862.256][INFO]: Waiting for pending navigations...
+[1536934862.257][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.265][INFO]: Waiting for pending navigations...
+[1536934862.266][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.266][INFO]: RESPONSE IsElementEnabled true
+[1536934862.269][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='User Profile ']/parent::div/descendant::p-dropdown"
+}
+[1536934862.269][INFO]: Waiting for pending navigations...
+[1536934862.269][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.277][INFO]: Waiting for pending navigations...
+[1536934862.278][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.278][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-16"
+}
+[1536934862.280][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-16"
+}
+[1536934862.280][INFO]: Waiting for pending navigations...
+[1536934862.281][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.372][INFO]: Waiting for pending navigations...
+[1536934862.378][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.378][INFO]: RESPONSE ClickElement
+[1536934862.382][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934862.382][INFO]: Waiting for pending navigations...
+[1536934862.383][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.386][INFO]: Waiting for pending navigations...
+[1536934862.387][INFO]: Done waiting for pending navigations. Status: ok
+[1536934862.387][INFO]: RESPONSE ExecuteScript "complete"
+[1536934862.390][INFO]: COMMAND GetWindow {
+
+}
+[1536934862.390][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934862.392][INFO]: COMMAND GetWindows {
+
+}
+[1536934862.393][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934862.898][INFO]: COMMAND GetWindows {
+
+}
+[1536934862.900][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934863.407][INFO]: COMMAND GetWindows {
+
+}
+[1536934863.409][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934863.416][INFO]: COMMAND Screenshot {
+
+}
+[1536934863.416][INFO]: Waiting for pending navigations...
+[1536934863.419][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.560][INFO]: Waiting for pending navigations...
+[1536934863.561][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.561][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eXBUV57v+blLblIKbWgDSSxCEkhsBgzYYDAGl13YZbuLattVrqnlverqJbpiXnV0d8zE/DHxeiJeR3R3dL8X/aK6pqumu8pdru15L28Y24AxlMEgdoEQYhESEpLQLuV2l/nj5q5M3..."
+[1536934863.573][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='Internet']"
+}
+[1536934863.573][INFO]: Waiting for pending navigations...
+[1536934863.574][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.589][INFO]: Waiting for pending navigations...
+[1536934863.590][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.590][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-17"
+}
+[1536934863.593][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-17",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-17"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934863.593][INFO]: Waiting for pending navigations...
+[1536934863.594][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.596][INFO]: Waiting for pending navigations...
+[1536934863.599][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.599][INFO]: RESPONSE ExecuteScript
+[1536934863.602][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934863.602][INFO]: Waiting for pending navigations...
+[1536934863.603][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.606][INFO]: Waiting for pending navigations...
+[1536934863.606][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.606][INFO]: RESPONSE ExecuteScript "complete"
+[1536934863.609][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='Internet']"
+}
+[1536934863.609][INFO]: Waiting for pending navigations...
+[1536934863.610][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.624][INFO]: Waiting for pending navigations...
+[1536934863.625][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.625][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-17"
+} ]
+[1536934863.627][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-17"
+}
+[1536934863.627][INFO]: Waiting for pending navigations...
+[1536934863.628][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.641][INFO]: Waiting for pending navigations...
+[1536934863.642][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.642][INFO]: RESPONSE IsElementDisplayed true
+[1536934863.645][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-17"
+}
+[1536934863.645][INFO]: Waiting for pending navigations...
+[1536934863.645][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.654][INFO]: Waiting for pending navigations...
+[1536934863.655][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.655][INFO]: RESPONSE IsElementEnabled true
+[1536934863.657][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='Internet']"
+}
+[1536934863.657][INFO]: Waiting for pending navigations...
+[1536934863.658][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.666][INFO]: Waiting for pending navigations...
+[1536934863.667][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.667][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-17"
+}
+[1536934863.670][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-17"
+}
+[1536934863.670][INFO]: Waiting for pending navigations...
+[1536934863.670][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.753][INFO]: Waiting for pending navigations...
+[1536934863.755][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.756][INFO]: RESPONSE ClickElement
+[1536934863.760][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934863.760][INFO]: Waiting for pending navigations...
+[1536934863.767][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.770][INFO]: Waiting for pending navigations...
+[1536934863.771][INFO]: Done waiting for pending navigations. Status: ok
+[1536934863.771][INFO]: RESPONSE ExecuteScript "complete"
+[1536934863.775][INFO]: COMMAND GetWindow {
+
+}
+[1536934863.775][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934863.780][INFO]: COMMAND GetWindows {
+
+}
+[1536934863.783][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934864.289][INFO]: COMMAND GetWindows {
+
+}
+[1536934864.291][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934864.797][INFO]: COMMAND GetWindows {
+
+}
+[1536934864.798][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934864.803][INFO]: COMMAND Screenshot {
+
+}
+[1536934864.803][INFO]: Waiting for pending navigations...
+[1536934864.804][INFO]: Done waiting for pending navigations. Status: ok
+[1536934864.911][INFO]: Waiting for pending navigations...
+[1536934864.911][INFO]: Done waiting for pending navigations. Status: ok
+[1536934864.912][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eXBc133v+blLb0CD2IiNBMAFBEAC3ERSJCVSpChSlizJkmI6smR5Yue9xFkqrnlOJamZmj+mXqbqpSpJJW/KbxxPkklsxfL2tFsbRUlcJNLiBoobSAAEFxAgQADEDvR2l/nj9o5u3..."
+[1536934864.922][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='Project ']/parent::div/descendant::p-dropdown"
+}
+[1536934864.922][INFO]: Waiting for pending navigations...
+[1536934864.923][INFO]: Done waiting for pending navigations. Status: ok
+[1536934864.938][INFO]: Waiting for pending navigations...
+[1536934864.939][INFO]: Done waiting for pending navigations. Status: ok
+[1536934864.939][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-18"
+}
+[1536934864.942][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-18",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-18"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934864.942][INFO]: Waiting for pending navigations...
+[1536934864.943][INFO]: Done waiting for pending navigations. Status: ok
+[1536934864.945][INFO]: Waiting for pending navigations...
+[1536934864.946][INFO]: Done waiting for pending navigations. Status: ok
+[1536934864.946][INFO]: RESPONSE ExecuteScript
+[1536934864.949][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934864.949][INFO]: Waiting for pending navigations...
+[1536934864.950][INFO]: Done waiting for pending navigations. Status: ok
+[1536934864.952][INFO]: Waiting for pending navigations...
+[1536934864.952][INFO]: Done waiting for pending navigations. Status: ok
+[1536934864.952][INFO]: RESPONSE ExecuteScript "complete"
+[1536934864.955][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[text()='Project ']/parent::div/descendant::p-dropdown"
+}
+[1536934864.955][INFO]: Waiting for pending navigations...
+[1536934864.956][INFO]: Done waiting for pending navigations. Status: ok
+[1536934864.970][INFO]: Waiting for pending navigations...
+[1536934864.971][INFO]: Done waiting for pending navigations. Status: ok
+[1536934864.971][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-18"
+} ]
+[1536934864.974][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-18"
+}
+[1536934864.974][INFO]: Waiting for pending navigations...
+[1536934864.975][INFO]: Done waiting for pending navigations. Status: ok
+[1536934864.988][INFO]: Waiting for pending navigations...
+[1536934864.989][INFO]: Done waiting for pending navigations. Status: ok
+[1536934864.989][INFO]: RESPONSE IsElementDisplayed true
+[1536934864.991][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-18"
+}
+[1536934864.991][INFO]: Waiting for pending navigations...
+[1536934864.992][INFO]: Done waiting for pending navigations. Status: ok
+[1536934865.001][INFO]: Waiting for pending navigations...
+[1536934865.002][INFO]: Done waiting for pending navigations. Status: ok
+[1536934865.002][INFO]: RESPONSE IsElementEnabled true
+[1536934865.004][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='Project ']/parent::div/descendant::p-dropdown"
+}
+[1536934865.004][INFO]: Waiting for pending navigations...
+[1536934865.005][INFO]: Done waiting for pending navigations. Status: ok
+[1536934865.013][INFO]: Waiting for pending navigations...
+[1536934865.014][INFO]: Done waiting for pending navigations. Status: ok
+[1536934865.014][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-18"
+}
+[1536934865.017][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-18"
+}
+[1536934865.017][INFO]: Waiting for pending navigations...
+[1536934865.018][INFO]: Done waiting for pending navigations. Status: ok
+[1536934865.119][INFO]: Waiting for pending navigations...
+[1536934865.129][INFO]: Done waiting for pending navigations. Status: ok
+[1536934865.129][INFO]: RESPONSE ClickElement
+[1536934865.133][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934865.133][INFO]: Waiting for pending navigations...
+[1536934865.133][INFO]: Done waiting for pending navigations. Status: ok
+[1536934865.135][INFO]: Waiting for pending navigations...
+[1536934865.135][INFO]: Done waiting for pending navigations. Status: ok
+[1536934865.135][INFO]: RESPONSE ExecuteScript "complete"
+[1536934865.138][INFO]: COMMAND GetWindow {
+
+}
+[1536934865.138][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934865.140][INFO]: COMMAND GetWindows {
+
+}
+[1536934865.140][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934865.645][INFO]: COMMAND GetWindows {
+
+}
+[1536934865.647][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934866.153][INFO]: COMMAND GetWindows {
+
+}
+[1536934866.155][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934866.161][INFO]: COMMAND Screenshot {
+
+}
+[1536934866.161][INFO]: Waiting for pending navigations...
+[1536934866.164][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.289][INFO]: Waiting for pending navigations...
+[1536934866.290][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.290][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eXBc133v+blLb0CD2IiNBMAFBEAC3ERSJCVSpChSlizJkmw6kmx5Yvs9x8lLJTUvqSQ1U/PH1MtUJVV5qeS9SsrxxJ7EVixvz5Il2VooSuIikRYpEhQ3kCAILiBAgACItYHe7jJ/3..."
+[1536934866.301][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default']"
+}
+[1536934866.301][INFO]: Waiting for pending navigations...
+[1536934866.302][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.316][INFO]: Waiting for pending navigations...
+[1536934866.317][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.317][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-19"
+}
+[1536934866.319][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-19",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-19"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934866.320][INFO]: Waiting for pending navigations...
+[1536934866.320][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.323][INFO]: Waiting for pending navigations...
+[1536934866.326][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.326][INFO]: RESPONSE ExecuteScript
+[1536934866.330][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934866.330][INFO]: Waiting for pending navigations...
+[1536934866.332][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.334][INFO]: Waiting for pending navigations...
+[1536934866.335][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.335][INFO]: RESPONSE ExecuteScript "complete"
+[1536934866.337][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default']"
+}
+[1536934866.337][INFO]: Waiting for pending navigations...
+[1536934866.338][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.353][INFO]: Waiting for pending navigations...
+[1536934866.354][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.354][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-19"
+} ]
+[1536934866.356][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-19"
+}
+[1536934866.356][INFO]: Waiting for pending navigations...
+[1536934866.357][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.370][INFO]: Waiting for pending navigations...
+[1536934866.371][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.371][INFO]: RESPONSE IsElementDisplayed true
+[1536934866.374][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-19"
+}
+[1536934866.374][INFO]: Waiting for pending navigations...
+[1536934866.375][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.384][INFO]: Waiting for pending navigations...
+[1536934866.385][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.385][INFO]: RESPONSE IsElementEnabled true
+[1536934866.388][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default']"
+}
+[1536934866.388][INFO]: Waiting for pending navigations...
+[1536934866.389][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.397][INFO]: Waiting for pending navigations...
+[1536934866.398][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.398][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-19"
+}
+[1536934866.401][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-19"
+}
+[1536934866.401][INFO]: Waiting for pending navigations...
+[1536934866.401][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.496][INFO]: Waiting for pending navigations...
+[1536934866.500][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.500][INFO]: RESPONSE ClickElement
+[1536934866.506][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934866.506][INFO]: Waiting for pending navigations...
+[1536934866.507][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.509][INFO]: Waiting for pending navigations...
+[1536934866.510][INFO]: Done waiting for pending navigations. Status: ok
+[1536934866.510][INFO]: RESPONSE ExecuteScript "complete"
+[1536934866.513][INFO]: COMMAND GetWindow {
+
+}
+[1536934866.513][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934866.515][INFO]: COMMAND GetWindows {
+
+}
+[1536934866.516][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934867.022][INFO]: COMMAND GetWindows {
+
+}
+[1536934867.024][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934867.532][INFO]: COMMAND GetWindows {
+
+}
+[1536934867.534][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934867.537][INFO]: COMMAND Screenshot {
+
+}
+[1536934867.537][INFO]: Waiting for pending navigations...
+[1536934867.538][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.639][INFO]: Waiting for pending navigations...
+[1536934867.640][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.640][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eXBc133v+blLb0CD2IiNBMAFBEAC3ERSJCVSpChSlizJkmI6kmx5Yvs9x1kqrnlOJamZmj+mXqbqpSpJJe9VXjme2JPYsuXtabc2ipK4SKRFigTFDSQAggsIECAAYgd6u8v8cXtHN..."
+[1536934867.651][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='Sub Project ']/parent::div/descendant::p-dropdown"
+}
+[1536934867.651][INFO]: Waiting for pending navigations...
+[1536934867.652][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.667][INFO]: Waiting for pending navigations...
+[1536934867.668][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.668][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-20"
+}
+[1536934867.671][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-20",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-20"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934867.671][INFO]: Waiting for pending navigations...
+[1536934867.672][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.674][INFO]: Waiting for pending navigations...
+[1536934867.675][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.675][INFO]: RESPONSE ExecuteScript
+[1536934867.678][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934867.678][INFO]: Waiting for pending navigations...
+[1536934867.679][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.680][INFO]: Waiting for pending navigations...
+[1536934867.681][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.681][INFO]: RESPONSE ExecuteScript "complete"
+[1536934867.683][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[text()='Sub Project ']/parent::div/descendant::p-dropdown"
+}
+[1536934867.683][INFO]: Waiting for pending navigations...
+[1536934867.684][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.699][INFO]: Waiting for pending navigations...
+[1536934867.699][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.699][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-20"
+} ]
+[1536934867.702][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-20"
+}
+[1536934867.702][INFO]: Waiting for pending navigations...
+[1536934867.703][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.716][INFO]: Waiting for pending navigations...
+[1536934867.717][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.717][INFO]: RESPONSE IsElementDisplayed true
+[1536934867.719][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-20"
+}
+[1536934867.720][INFO]: Waiting for pending navigations...
+[1536934867.720][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.729][INFO]: Waiting for pending navigations...
+[1536934867.730][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.730][INFO]: RESPONSE IsElementEnabled true
+[1536934867.732][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='Sub Project ']/parent::div/descendant::p-dropdown"
+}
+[1536934867.732][INFO]: Waiting for pending navigations...
+[1536934867.733][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.741][INFO]: Waiting for pending navigations...
+[1536934867.750][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.750][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-20"
+}
+[1536934867.753][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-20"
+}
+[1536934867.753][INFO]: Waiting for pending navigations...
+[1536934867.753][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.851][INFO]: Waiting for pending navigations...
+[1536934867.858][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.858][INFO]: RESPONSE ClickElement
+[1536934867.862][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934867.862][INFO]: Waiting for pending navigations...
+[1536934867.864][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.866][INFO]: Waiting for pending navigations...
+[1536934867.867][INFO]: Done waiting for pending navigations. Status: ok
+[1536934867.867][INFO]: RESPONSE ExecuteScript "complete"
+[1536934867.869][INFO]: COMMAND GetWindow {
+
+}
+[1536934867.869][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934867.872][INFO]: COMMAND GetWindows {
+
+}
+[1536934867.872][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934868.377][INFO]: COMMAND GetWindows {
+
+}
+[1536934868.379][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934868.885][INFO]: COMMAND GetWindows {
+
+}
+[1536934868.887][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934868.893][INFO]: COMMAND Screenshot {
+
+}
+[1536934868.893][INFO]: Waiting for pending navigations...
+[1536934868.896][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.032][INFO]: Waiting for pending navigations...
+[1536934869.033][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.033][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eXBc133v+blLb0CD2IiNBMAFBEgC3ERSJCVSpChSlkzJkmI6smx5YjtxnLxUXPOcSlIzNX9MvUzVS9VLKnmv/MrxxJ7EVixvz7IWWwtFSaQokRYpEhQ3kAAILiBAgACItYHe7jJ/3..."
+[1536934869.046][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default']"
+}
+[1536934869.046][INFO]: Waiting for pending navigations...
+[1536934869.047][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.055][INFO]: Waiting for pending navigations...
+[1536934869.056][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.056][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-21"
+}
+[1536934869.058][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-21",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-21"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934869.058][INFO]: Waiting for pending navigations...
+[1536934869.059][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.062][INFO]: Waiting for pending navigations...
+[1536934869.062][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.062][INFO]: RESPONSE ExecuteScript
+[1536934869.065][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934869.065][INFO]: Waiting for pending navigations...
+[1536934869.066][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.068][INFO]: Waiting for pending navigations...
+[1536934869.068][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.068][INFO]: RESPONSE ExecuteScript "complete"
+[1536934869.071][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default']"
+}
+[1536934869.071][INFO]: Waiting for pending navigations...
+[1536934869.071][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.081][INFO]: Waiting for pending navigations...
+[1536934869.081][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.081][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-21"
+} ]
+[1536934869.084][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-21"
+}
+[1536934869.084][INFO]: Waiting for pending navigations...
+[1536934869.084][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.099][INFO]: Waiting for pending navigations...
+[1536934869.101][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.101][INFO]: RESPONSE IsElementDisplayed true
+[1536934869.104][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-21"
+}
+[1536934869.104][INFO]: Waiting for pending navigations...
+[1536934869.105][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.113][INFO]: Waiting for pending navigations...
+[1536934869.114][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.114][INFO]: RESPONSE IsElementEnabled true
+[1536934869.116][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default']"
+}
+[1536934869.116][INFO]: Waiting for pending navigations...
+[1536934869.117][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.125][INFO]: Waiting for pending navigations...
+[1536934869.126][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.126][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-21"
+}
+[1536934869.129][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-21"
+}
+[1536934869.129][INFO]: Waiting for pending navigations...
+[1536934869.130][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.216][INFO]: Waiting for pending navigations...
+[1536934869.220][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.220][INFO]: RESPONSE ClickElement
+[1536934869.223][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934869.223][INFO]: Waiting for pending navigations...
+[1536934869.224][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.227][INFO]: Waiting for pending navigations...
+[1536934869.228][INFO]: Done waiting for pending navigations. Status: ok
+[1536934869.228][INFO]: RESPONSE ExecuteScript "complete"
+[1536934869.230][INFO]: COMMAND GetWindow {
+
+}
+[1536934869.230][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934869.233][INFO]: COMMAND GetWindows {
+
+}
+[1536934869.234][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934869.738][INFO]: COMMAND GetWindows {
+
+}
+[1536934869.740][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934870.244][INFO]: COMMAND GetWindows {
+
+}
+[1536934870.245][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934870.248][INFO]: COMMAND Screenshot {
+
+}
+[1536934870.248][INFO]: Waiting for pending navigations...
+[1536934870.282][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.391][INFO]: Waiting for pending navigations...
+[1536934870.392][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.392][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eXBc133n+7lLb1iIjdhIAFxAACTATSRFUiJFiiJlyZIsKaYjyZZfZM84TiaV1BunktSben+8mryqcVUmlcyrTDl+sV9iK5a30W5tFCVxkUiLFAmKG0gABBcQIEAAxNpAb3d5f9ze0..."
+[1536934870.403][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='Script ']/parent::div/descendant::p-dropdown"
+}
+[1536934870.403][INFO]: Waiting for pending navigations...
+[1536934870.404][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.419][INFO]: Waiting for pending navigations...
+[1536934870.420][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.420][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-22"
+}
+[1536934870.423][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-22",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-22"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934870.423][INFO]: Waiting for pending navigations...
+[1536934870.423][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.426][INFO]: Waiting for pending navigations...
+[1536934870.427][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.427][INFO]: RESPONSE ExecuteScript
+[1536934870.429][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934870.429][INFO]: Waiting for pending navigations...
+[1536934870.430][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.432][INFO]: Waiting for pending navigations...
+[1536934870.432][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.432][INFO]: RESPONSE ExecuteScript "complete"
+[1536934870.435][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[text()='Script ']/parent::div/descendant::p-dropdown"
+}
+[1536934870.435][INFO]: Waiting for pending navigations...
+[1536934870.436][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.455][INFO]: Waiting for pending navigations...
+[1536934870.456][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.456][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-22"
+} ]
+[1536934870.459][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-22"
+}
+[1536934870.459][INFO]: Waiting for pending navigations...
+[1536934870.459][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.473][INFO]: Waiting for pending navigations...
+[1536934870.473][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.473][INFO]: RESPONSE IsElementDisplayed true
+[1536934870.476][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-22"
+}
+[1536934870.476][INFO]: Waiting for pending navigations...
+[1536934870.477][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.485][INFO]: Waiting for pending navigations...
+[1536934870.486][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.486][INFO]: RESPONSE IsElementEnabled true
+[1536934870.489][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[text()='Script ']/parent::div/descendant::p-dropdown"
+}
+[1536934870.489][INFO]: Waiting for pending navigations...
+[1536934870.490][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.497][INFO]: Waiting for pending navigations...
+[1536934870.498][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.498][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-22"
+}
+[1536934870.501][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-22"
+}
+[1536934870.501][INFO]: Waiting for pending navigations...
+[1536934870.502][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.613][INFO]: Waiting for pending navigations...
+[1536934870.621][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.621][INFO]: RESPONSE ClickElement
+[1536934870.625][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934870.625][INFO]: Waiting for pending navigations...
+[1536934870.625][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.627][INFO]: Waiting for pending navigations...
+[1536934870.628][INFO]: Done waiting for pending navigations. Status: ok
+[1536934870.628][INFO]: RESPONSE ExecuteScript "complete"
+[1536934870.630][INFO]: COMMAND GetWindow {
+
+}
+[1536934870.630][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934870.633][INFO]: COMMAND GetWindows {
+
+}
+[1536934870.633][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934871.137][INFO]: COMMAND GetWindows {
+
+}
+[1536934871.139][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934871.645][INFO]: COMMAND GetWindows {
+
+}
+[1536934871.647][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934871.653][INFO]: COMMAND Screenshot {
+
+}
+[1536934871.653][INFO]: Waiting for pending navigations...
+[1536934871.656][INFO]: Done waiting for pending navigations. Status: ok
+[1536934871.848][INFO]: Waiting for pending navigations...
+[1536934871.850][INFO]: Done waiting for pending navigations. Status: ok
+[1536934871.850][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eXBVV37v+9nDmTSgCU0giUFIAonJgAEbDMbgttt2207ouN3tfunOvZ1Obiqpd5NKUu/V++PVzau6qcpNJfdWbnX6JXlJt9Pu6Xpu2208MdjQBoMwk0AICRASEpLQLJ1pD++PfeZpn..."
+[1536934871.862][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934871.862][INFO]: Waiting for pending navigations...
+[1536934871.863][INFO]: Done waiting for pending navigations. Status: ok
+[1536934871.865][INFO]: Waiting for pending navigations...
+[1536934871.865][INFO]: Done waiting for pending navigations. Status: ok
+[1536934871.865][INFO]: RESPONSE ExecuteScript "complete"
+[1536934871.868][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul/ancestor::div[contains(@class,'ui-dropdown-panel')]/child::div[contains(@class,'ui-dropdown-filter-container')]/child::input"
+}
+[1536934871.868][INFO]: Waiting for pending navigations...
+[1536934871.869][INFO]: Done waiting for pending navigations. Status: ok
+[1536934871.907][INFO]: Waiting for pending navigations...
+[1536934871.909][INFO]: Done waiting for pending navigations. Status: ok
+[1536934871.909][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-23"
+}
+[1536934871.912][INFO]: COMMAND ClearElement {
+   "id": "0.7989907836082091-23"
+}
+[1536934871.912][INFO]: Waiting for pending navigations...
+[1536934871.913][INFO]: Done waiting for pending navigations. Status: ok
+[1536934871.932][INFO]: Waiting for pending navigations...
+[1536934871.933][INFO]: Done waiting for pending navigations. Status: ok
+[1536934871.933][INFO]: RESPONSE ClearElement
+[1536934871.936][INFO]: COMMAND TypeElement {
+   "id": "0.7989907836082091-23",
+   "value": [ "hpd" ]
+}
+[1536934871.936][INFO]: Waiting for pending navigations...
+[1536934871.937][INFO]: Done waiting for pending navigations. Status: ok
+[1536934872.034][INFO]: Waiting for pending navigations...
+[1536934872.035][INFO]: Done waiting for pending navigations. Status: ok
+[1536934872.035][INFO]: RESPONSE TypeElement
+[1536934872.038][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934872.038][INFO]: Waiting for pending navigations...
+[1536934872.039][INFO]: Done waiting for pending navigations. Status: ok
+[1536934872.040][INFO]: Waiting for pending navigations...
+[1536934872.041][INFO]: Done waiting for pending navigations. Status: ok
+[1536934872.041][INFO]: RESPONSE ExecuteScript "complete"
+[1536934872.043][INFO]: COMMAND GetWindow {
+
+}
+[1536934872.043][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934872.045][INFO]: COMMAND GetWindows {
+
+}
+[1536934872.046][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934872.550][INFO]: COMMAND GetWindows {
+
+}
+[1536934872.552][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934873.058][INFO]: COMMAND GetWindows {
+
+}
+[1536934873.061][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934873.067][INFO]: COMMAND Screenshot {
+
+}
+[1536934873.067][INFO]: Waiting for pending navigations...
+[1536934873.069][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.196][INFO]: Waiting for pending navigations...
+[1536934873.197][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.197][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eXBV153v+9nDmaQjNKEJJDEISSAxGTBgg8EYHDu2Y7tD2nHivAz3ptNDderddHV3vVfvj1e3X9VNVXdX973Vt9J5nbzuxIkzXc/xhCfANsRgEGYSCCEBQkJCEhrQcKY9vD/2mXXO2..."
+[1536934873.207][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='hpd_tours']"
+}
+[1536934873.208][INFO]: Waiting for pending navigations...
+[1536934873.208][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.223][INFO]: Waiting for pending navigations...
+[1536934873.225][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.225][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-24"
+}
+[1536934873.228][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-24",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-24"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934873.228][INFO]: Waiting for pending navigations...
+[1536934873.229][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.232][INFO]: Waiting for pending navigations...
+[1536934873.233][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.233][INFO]: RESPONSE ExecuteScript
+[1536934873.236][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934873.236][INFO]: Waiting for pending navigations...
+[1536934873.236][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.238][INFO]: Waiting for pending navigations...
+[1536934873.238][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.238][INFO]: RESPONSE ExecuteScript "complete"
+[1536934873.241][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='hpd_tours']"
+}
+[1536934873.241][INFO]: Waiting for pending navigations...
+[1536934873.243][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.268][INFO]: Waiting for pending navigations...
+[1536934873.268][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.268][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-24"
+} ]
+[1536934873.271][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-24"
+}
+[1536934873.271][INFO]: Waiting for pending navigations...
+[1536934873.272][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.285][INFO]: Waiting for pending navigations...
+[1536934873.286][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.286][INFO]: RESPONSE IsElementDisplayed true
+[1536934873.288][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-24"
+}
+[1536934873.288][INFO]: Waiting for pending navigations...
+[1536934873.289][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.298][INFO]: Waiting for pending navigations...
+[1536934873.298][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.298][INFO]: RESPONSE IsElementEnabled true
+[1536934873.301][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='hpd_tours']"
+}
+[1536934873.301][INFO]: Waiting for pending navigations...
+[1536934873.302][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.310][INFO]: Waiting for pending navigations...
+[1536934873.310][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.310][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-24"
+}
+[1536934873.313][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-24"
+}
+[1536934873.313][INFO]: Waiting for pending navigations...
+[1536934873.314][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.406][INFO]: Waiting for pending navigations...
+[1536934873.411][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.411][INFO]: RESPONSE ClickElement
+[1536934873.414][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934873.414][INFO]: Waiting for pending navigations...
+[1536934873.417][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.419][INFO]: Waiting for pending navigations...
+[1536934873.420][INFO]: Done waiting for pending navigations. Status: ok
+[1536934873.420][INFO]: RESPONSE ExecuteScript "complete"
+[1536934873.423][INFO]: COMMAND GetWindow {
+
+}
+[1536934873.423][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934873.426][INFO]: COMMAND GetWindows {
+
+}
+[1536934873.426][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934873.931][INFO]: COMMAND GetWindows {
+
+}
+[1536934873.933][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934874.439][INFO]: COMMAND GetWindows {
+
+}
+[1536934874.441][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934874.447][INFO]: COMMAND Screenshot {
+
+}
+[1536934874.447][INFO]: Waiting for pending navigations...
+[1536934874.450][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.579][INFO]: Waiting for pending navigations...
+[1536934874.580][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.580][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9eXBV153v+9nDmaQjNKERSYCEBEhMBgzYYDABxw52bHdIHCfO6yTd6XTfrk69m67urvfq/fHq9qu6qerb1X1v5VY6r5PX7bjjTNdzPOGJwYYYzGAECISQACEhIQkNaDjTHt4f+8w6R..."
+[1536934874.591][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//p-dialog[contains(@class,'addEditGroupDialog')]/div/descendant::button/span[text()='OK']"
+}
+[1536934874.591][INFO]: Waiting for pending navigations...
+[1536934874.592][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.607][INFO]: Waiting for pending navigations...
+[1536934874.608][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.608][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-25"
+}
+[1536934874.610][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-25",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-25"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934874.610][INFO]: Waiting for pending navigations...
+[1536934874.611][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.614][INFO]: Waiting for pending navigations...
+[1536934874.615][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.615][INFO]: RESPONSE ExecuteScript
+[1536934874.618][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934874.618][INFO]: Waiting for pending navigations...
+[1536934874.618][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.620][INFO]: Waiting for pending navigations...
+[1536934874.620][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.620][INFO]: RESPONSE ExecuteScript "complete"
+[1536934874.623][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//p-dialog[contains(@class,'addEditGroupDialog')]/div/descendant::button/span[text()='OK']"
+}
+[1536934874.623][INFO]: Waiting for pending navigations...
+[1536934874.623][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.638][INFO]: Waiting for pending navigations...
+[1536934874.639][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.639][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-25"
+} ]
+[1536934874.641][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-25"
+}
+[1536934874.641][INFO]: Waiting for pending navigations...
+[1536934874.642][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.655][INFO]: Waiting for pending navigations...
+[1536934874.656][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.656][INFO]: RESPONSE IsElementDisplayed true
+[1536934874.659][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-25"
+}
+[1536934874.659][INFO]: Waiting for pending navigations...
+[1536934874.659][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.668][INFO]: Waiting for pending navigations...
+[1536934874.669][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.669][INFO]: RESPONSE IsElementEnabled true
+[1536934874.671][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//p-dialog[contains(@class,'addEditGroupDialog')]/div/descendant::button/span[text()='OK']"
+}
+[1536934874.671][INFO]: Waiting for pending navigations...
+[1536934874.672][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.679][INFO]: Waiting for pending navigations...
+[1536934874.680][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.680][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-25"
+}
+[1536934874.683][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-25"
+}
+[1536934874.683][INFO]: Waiting for pending navigations...
+[1536934874.683][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.876][INFO]: Waiting for pending navigations...
+[1536934874.897][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.897][INFO]: RESPONSE ClickElement
+[1536934874.900][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934874.900][INFO]: Waiting for pending navigations...
+[1536934874.912][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.926][INFO]: Waiting for pending navigations...
+[1536934874.940][INFO]: Done waiting for pending navigations. Status: ok
+[1536934874.940][INFO]: RESPONSE ExecuteScript "complete"
+[1536934874.943][INFO]: COMMAND GetWindow {
+
+}
+[1536934874.943][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934874.946][INFO]: COMMAND GetWindows {
+
+}
+[1536934874.947][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934875.452][INFO]: COMMAND GetWindows {
+
+}
+[1536934875.454][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934875.959][INFO]: COMMAND GetWindows {
+
+}
+[1536934875.960][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934875.964][INFO]: COMMAND Screenshot {
+
+}
+[1536934875.964][INFO]: Waiting for pending navigations...
+[1536934875.966][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.105][INFO]: Waiting for pending navigations...
+[1536934876.106][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.106][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOydd3wUZf7H3zOzLR1CQglNDaCJJ01QigcKB8RT1BMUD9SfchY49Sx3oj8P8c72Uzx7AT0PvFNQPMQCKojSlKLSjEqkSzEBEkJ6dmd3Z35/bN/s7uxmd5MN7McXJpmZ53m+88xTP8+3C..."
+[1536934876.118][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[text()='Group Based Settings']"
+}
+[1536934876.118][INFO]: Waiting for pending navigations...
+[1536934876.119][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.133][INFO]: Waiting for pending navigations...
+[1536934876.134][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.134][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-26"
+}
+[1536934876.137][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-26",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-26"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934876.137][INFO]: Waiting for pending navigations...
+[1536934876.138][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.141][INFO]: Waiting for pending navigations...
+[1536934876.142][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.142][INFO]: RESPONSE ExecuteScript
+[1536934876.144][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934876.144][INFO]: Waiting for pending navigations...
+[1536934876.145][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.147][INFO]: Waiting for pending navigations...
+[1536934876.148][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.148][INFO]: RESPONSE ExecuteScript "complete"
+[1536934876.150][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//span[text()='Group Based Settings']"
+}
+[1536934876.150][INFO]: Waiting for pending navigations...
+[1536934876.151][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.165][INFO]: Waiting for pending navigations...
+[1536934876.176][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.176][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-26"
+} ]
+[1536934876.181][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-26"
+}
+[1536934876.181][INFO]: Waiting for pending navigations...
+[1536934876.182][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.204][INFO]: Waiting for pending navigations...
+[1536934876.204][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.204][INFO]: RESPONSE IsElementDisplayed true
+[1536934876.207][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-26"
+}
+[1536934876.207][INFO]: Waiting for pending navigations...
+[1536934876.208][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.221][INFO]: Waiting for pending navigations...
+[1536934876.221][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.221][INFO]: RESPONSE IsElementEnabled true
+[1536934876.224][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[text()='Group Based Settings']"
+}
+[1536934876.224][INFO]: Waiting for pending navigations...
+[1536934876.225][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.241][INFO]: Waiting for pending navigations...
+[1536934876.241][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.241][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-26"
+}
+[1536934876.244][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-26"
+}
+[1536934876.244][INFO]: Waiting for pending navigations...
+[1536934876.245][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.340][INFO]: Waiting for pending navigations...
+[1536934876.343][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.343][INFO]: RESPONSE ClickElement
+[1536934876.346][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934876.346][INFO]: Waiting for pending navigations...
+[1536934876.347][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.350][INFO]: Waiting for pending navigations...
+[1536934876.351][INFO]: Done waiting for pending navigations. Status: ok
+[1536934876.351][INFO]: RESPONSE ExecuteScript "complete"
+[1536934876.353][INFO]: COMMAND GetWindow {
+
+}
+[1536934876.353][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934876.356][INFO]: COMMAND GetWindows {
+
+}
+[1536934876.357][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934876.860][INFO]: COMMAND GetWindows {
+
+}
+[1536934876.861][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934877.366][INFO]: COMMAND GetWindows {
+
+}
+[1536934877.368][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934877.374][INFO]: COMMAND Screenshot {
+
+}
+[1536934877.374][INFO]: Waiting for pending navigations...
+[1536934877.376][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.519][INFO]: Waiting for pending navigations...
+[1536934877.520][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.520][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOydeXwU5f3H3zOzV24IhCNcagANllNQDgXFArGCWkHwB+pPKSpUrUcrWovYev0U61W1oLVgq6BYxAO0IHIql3IZlMgtVwIkQO7szu7O/P7Ye7O7s5vdTTawH18xYWae5/nOM8/5eb6H8..."
+[1536934877.538][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[text()='Group Based Settings']/ancestor::div[contains(@class,'ui-panelmenu-panel')]/descendant::span[text()='HTTP']"
+}
+[1536934877.538][INFO]: Waiting for pending navigations...
+[1536934877.539][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.553][INFO]: Waiting for pending navigations...
+[1536934877.554][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.554][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-27"
+}
+[1536934877.557][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-27",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-27"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934877.557][INFO]: Waiting for pending navigations...
+[1536934877.559][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.564][INFO]: Waiting for pending navigations...
+[1536934877.568][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.568][INFO]: RESPONSE ExecuteScript
+[1536934877.572][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934877.572][INFO]: Waiting for pending navigations...
+[1536934877.573][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.575][INFO]: Waiting for pending navigations...
+[1536934877.576][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.576][INFO]: RESPONSE ExecuteScript "complete"
+[1536934877.579][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//span[text()='Group Based Settings']/ancestor::div[contains(@class,'ui-panelmenu-panel')]/descendant::span[text()='HTTP']"
+}
+[1536934877.580][INFO]: Waiting for pending navigations...
+[1536934877.581][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.595][INFO]: Waiting for pending navigations...
+[1536934877.596][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.596][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-27"
+} ]
+[1536934877.599][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-27"
+}
+[1536934877.599][INFO]: Waiting for pending navigations...
+[1536934877.599][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.613][INFO]: Waiting for pending navigations...
+[1536934877.614][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.614][INFO]: RESPONSE IsElementDisplayed true
+[1536934877.616][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-27"
+}
+[1536934877.616][INFO]: Waiting for pending navigations...
+[1536934877.617][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.629][INFO]: Waiting for pending navigations...
+[1536934877.630][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.630][INFO]: RESPONSE IsElementEnabled true
+[1536934877.633][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[text()='Group Based Settings']/ancestor::div[contains(@class,'ui-panelmenu-panel')]/descendant::span[text()='HTTP']"
+}
+[1536934877.633][INFO]: Waiting for pending navigations...
+[1536934877.634][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.641][INFO]: Waiting for pending navigations...
+[1536934877.642][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.642][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-27"
+}
+[1536934877.645][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-27"
+}
+[1536934877.645][INFO]: Waiting for pending navigations...
+[1536934877.646][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.902][INFO]: Waiting for pending navigations...
+[1536934877.922][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.922][INFO]: RESPONSE ClickElement
+[1536934877.925][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934877.925][INFO]: Waiting for pending navigations...
+[1536934877.926][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.928][INFO]: Waiting for pending navigations...
+[1536934877.930][INFO]: Done waiting for pending navigations. Status: ok
+[1536934877.930][INFO]: RESPONSE ExecuteScript "complete"
+[1536934877.933][INFO]: COMMAND GetWindow {
+
+}
+[1536934877.934][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934877.938][INFO]: COMMAND GetWindows {
+
+}
+[1536934877.938][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934878.442][INFO]: COMMAND GetWindows {
+
+}
+[1536934878.443][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934878.948][INFO]: COMMAND GetWindows {
+
+}
+[1536934878.949][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934878.954][INFO]: COMMAND Screenshot {
+
+}
+[1536934878.955][INFO]: Waiting for pending navigations...
+[1536934878.957][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.081][INFO]: Waiting for pending navigations...
+[1536934879.082][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.082][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOzdfVzUdb7//8fA8BmUAWGgJBOPKCWwHTCTcsPTCvtNtDTMi7K0UDNNdL+h+w31+0M7Kr9T0qlwM8wyzdLURV3RSrA9Yq2UhZWwBVgYrCRCKSAXylww8/1jUAFhALmG1/12w2Hm8/7M5..."
+[1536934879.094][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='Advanced Settings']"
+}
+[1536934879.094][INFO]: Waiting for pending navigations...
+[1536934879.095][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.109][INFO]: Waiting for pending navigations...
+[1536934879.110][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.110][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-28"
+}
+[1536934879.112][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-28",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-28"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934879.112][INFO]: Waiting for pending navigations...
+[1536934879.113][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.116][INFO]: Waiting for pending navigations...
+[1536934879.117][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.117][INFO]: RESPONSE ExecuteScript
+[1536934879.119][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934879.119][INFO]: Waiting for pending navigations...
+[1536934879.120][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.122][INFO]: Waiting for pending navigations...
+[1536934879.123][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.123][INFO]: RESPONSE ExecuteScript "complete"
+[1536934879.125][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//a[text()='Advanced Settings']"
+}
+[1536934879.125][INFO]: Waiting for pending navigations...
+[1536934879.126][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.140][INFO]: Waiting for pending navigations...
+[1536934879.141][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.141][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-28"
+} ]
+[1536934879.144][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-28"
+}
+[1536934879.144][INFO]: Waiting for pending navigations...
+[1536934879.145][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.158][INFO]: Waiting for pending navigations...
+[1536934879.159][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.159][INFO]: RESPONSE IsElementDisplayed true
+[1536934879.161][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-28"
+}
+[1536934879.161][INFO]: Waiting for pending navigations...
+[1536934879.162][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.170][INFO]: Waiting for pending navigations...
+[1536934879.171][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.171][INFO]: RESPONSE IsElementEnabled true
+[1536934879.174][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[text()='Advanced Settings']"
+}
+[1536934879.174][INFO]: Waiting for pending navigations...
+[1536934879.175][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.182][INFO]: Waiting for pending navigations...
+[1536934879.183][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.183][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-28"
+}
+[1536934879.185][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-28"
+}
+[1536934879.185][INFO]: Waiting for pending navigations...
+[1536934879.186][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.265][INFO]: Waiting for pending navigations...
+[1536934879.282][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.282][INFO]: RESPONSE ClickElement
+[1536934879.285][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934879.285][INFO]: Waiting for pending navigations...
+[1536934879.286][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.288][INFO]: Waiting for pending navigations...
+[1536934879.289][INFO]: Done waiting for pending navigations. Status: ok
+[1536934879.289][INFO]: RESPONSE ExecuteScript "complete"
+[1536934879.293][INFO]: COMMAND GetWindow {
+
+}
+[1536934879.293][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934879.295][INFO]: COMMAND GetWindows {
+
+}
+[1536934879.296][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934879.799][INFO]: COMMAND GetWindows {
+
+}
+[1536934879.799][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934880.303][INFO]: COMMAND GetWindows {
+
+}
+[1536934880.305][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934880.310][INFO]: COMMAND Screenshot {
+
+}
+[1536934880.310][INFO]: Waiting for pending navigations...
+[1536934880.312][INFO]: Done waiting for pending navigations. Status: ok
+[1536934880.449][INFO]: Waiting for pending navigations...
+[1536934880.450][INFO]: Done waiting for pending navigations. Status: ok
+[1536934880.450][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOzdfVzUdb7//8fAzGdQBpTBkkg8IpbAdsRKyg1PCee7oq2GeVGWFmqmie43dL+hnh+635TfKWm38GSYZZqlqYu6opVo54i1UhZWwhZgYbCSCKWAXChzwcz3jxl1QBhA5Pp1v910mPlcv..."
+[1536934882.466][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//label[contains(text(),'Add MD5 checksum HTTP header in the request based on the body of the HTTP request')]/preceding-sibling::div/descendant::div[contains(@class,'ui-chkbox-box')]"
+}
+[1536934882.466][INFO]: Waiting for pending navigations...
+[1536934882.469][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.488][INFO]: Waiting for pending navigations...
+[1536934882.489][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.489][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-29"
+}
+[1536934882.491][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-29",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-29"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934882.491][INFO]: Waiting for pending navigations...
+[1536934882.492][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.495][INFO]: Waiting for pending navigations...
+[1536934882.501][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.501][INFO]: RESPONSE ExecuteScript
+[1536934882.506][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934882.506][INFO]: Waiting for pending navigations...
+[1536934882.509][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.512][INFO]: Waiting for pending navigations...
+[1536934882.513][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.513][INFO]: RESPONSE ExecuteScript "complete"
+[1536934882.517][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//label[contains(text(),'Add MD5 checksum HTTP header in the request based on the body of the HTTP request')]/preceding-sibling::div/descendant::div[contains(@class,'ui-chkbox-box')]"
+}
+[1536934882.517][INFO]: Waiting for pending navigations...
+[1536934882.518][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.534][INFO]: Waiting for pending navigations...
+[1536934882.535][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.535][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-29"
+} ]
+[1536934882.538][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-29"
+}
+[1536934882.538][INFO]: Waiting for pending navigations...
+[1536934882.538][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.553][INFO]: Waiting for pending navigations...
+[1536934882.554][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.554][INFO]: RESPONSE IsElementDisplayed true
+[1536934882.556][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-29"
+}
+[1536934882.556][INFO]: Waiting for pending navigations...
+[1536934882.557][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.566][INFO]: Waiting for pending navigations...
+[1536934882.567][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.567][INFO]: RESPONSE IsElementEnabled true
+[1536934882.570][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//label[contains(text(),'Add MD5 checksum HTTP header in the request based on the body of the HTTP request')]/preceding-sibling::div/descendant::div[contains(@class,'ui-chkbox-box')]"
+}
+[1536934882.570][INFO]: Waiting for pending navigations...
+[1536934882.571][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.583][INFO]: Waiting for pending navigations...
+[1536934882.583][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.583][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-29"
+}
+[1536934882.586][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-29"
+}
+[1536934882.586][INFO]: Waiting for pending navigations...
+[1536934882.587][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.654][INFO]: Waiting for pending navigations...
+[1536934882.659][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.660][INFO]: RESPONSE ClickElement
+[1536934882.662][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934882.662][INFO]: Waiting for pending navigations...
+[1536934882.664][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.666][INFO]: Waiting for pending navigations...
+[1536934882.667][INFO]: Done waiting for pending navigations. Status: ok
+[1536934882.667][INFO]: RESPONSE ExecuteScript "complete"
+[1536934882.672][INFO]: COMMAND GetWindow {
+
+}
+[1536934882.672][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934882.674][INFO]: COMMAND GetWindows {
+
+}
+[1536934882.675][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934883.179][INFO]: COMMAND GetWindows {
+
+}
+[1536934883.181][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934883.686][INFO]: COMMAND GetWindows {
+
+}
+[1536934883.688][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934883.693][INFO]: COMMAND Screenshot {
+
+}
+[1536934883.693][INFO]: Waiting for pending navigations...
+[1536934883.695][INFO]: Done waiting for pending navigations. Status: ok
+[1536934883.843][INFO]: Waiting for pending navigations...
+[1536934883.844][INFO]: Done waiting for pending navigations. Status: ok
+[1536934883.844][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOzde1yUdd7/8dfAnJQBBCzIgvT27Ca0yVT3jpa4JVqplYdbU1PJQ6Hei1ak96KV0q1hKa6GlaaVmm6om9oBrFs6OPdvE7s3sBUPuBqkgSmKgMIMML8/ZsBhOMwgZ/g8feAwc52+13XNX..."
+[1536934883.857][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934883.857][INFO]: Waiting for pending navigations...
+[1536934883.858][INFO]: Done waiting for pending navigations. Status: ok
+[1536934883.859][INFO]: Waiting for pending navigations...
+[1536934883.860][INFO]: Done waiting for pending navigations. Status: ok
+[1536934883.860][INFO]: RESPONSE ExecuteScript "complete"
+[1536934883.862][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//label[text()='Header Name']/following-sibling::input"
+}
+[1536934883.862][INFO]: Waiting for pending navigations...
+[1536934883.863][INFO]: Done waiting for pending navigations. Status: ok
+[1536934883.877][INFO]: Waiting for pending navigations...
+[1536934883.878][INFO]: Done waiting for pending navigations. Status: ok
+[1536934883.878][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-30"
+}
+[1536934883.881][INFO]: COMMAND ClearElement {
+   "id": "0.7989907836082091-30"
+}
+[1536934883.881][INFO]: Waiting for pending navigations...
+[1536934883.881][INFO]: Done waiting for pending navigations. Status: ok
+[1536934883.903][INFO]: Waiting for pending navigations...
+[1536934883.907][INFO]: Done waiting for pending navigations. Status: ok
+[1536934883.907][INFO]: RESPONSE ClearElement
+[1536934883.910][INFO]: COMMAND TypeElement {
+   "id": "0.7989907836082091-30",
+   "value": [ "MD5-Header" ]
+}
+[1536934883.910][INFO]: Waiting for pending navigations...
+[1536934883.911][INFO]: Done waiting for pending navigations. Status: ok
+[1536934884.147][INFO]: Waiting for pending navigations...
+[1536934884.150][INFO]: Done waiting for pending navigations. Status: ok
+[1536934884.150][INFO]: RESPONSE TypeElement
+[1536934884.153][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934884.153][INFO]: Waiting for pending navigations...
+[1536934884.154][INFO]: Done waiting for pending navigations. Status: ok
+[1536934884.156][INFO]: Waiting for pending navigations...
+[1536934884.157][INFO]: Done waiting for pending navigations. Status: ok
+[1536934884.157][INFO]: RESPONSE ExecuteScript "complete"
+[1536934884.160][INFO]: COMMAND GetWindow {
+
+}
+[1536934884.160][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934884.162][INFO]: COMMAND GetWindows {
+
+}
+[1536934884.163][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934884.667][INFO]: COMMAND GetWindows {
+
+}
+[1536934884.669][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934885.175][INFO]: COMMAND GetWindows {
+
+}
+[1536934885.177][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934885.183][INFO]: COMMAND Screenshot {
+
+}
+[1536934885.184][INFO]: Waiting for pending navigations...
+[1536934885.186][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.324][INFO]: Waiting for pending navigations...
+[1536934885.325][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.325][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOzde1yUdd7/8dfAnJQBBCzIgvT27Ca0yVT3jpa4JVqplYdbU1PJQ6Hei1ak96KV0q1hKa6GlaaVmm6om9oBrFs6OPdvE7s3sBUPuBqkgSmKgMIMML8/ZsBhOMwgZ/g8feAwc52+13XNX..."
+[1536934885.338][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//label[contains(text(),'Add Header in case of empty body also')]/preceding-sibling::div/descendant::div[contains(@class,'ui-chkbox-box')]"
+}
+[1536934885.338][INFO]: Waiting for pending navigations...
+[1536934885.339][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.353][INFO]: Waiting for pending navigations...
+[1536934885.355][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.355][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-31"
+}
+[1536934885.358][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-31",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-31"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934885.358][INFO]: Waiting for pending navigations...
+[1536934885.359][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.363][INFO]: Waiting for pending navigations...
+[1536934885.363][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.363][INFO]: RESPONSE ExecuteScript
+[1536934885.366][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934885.366][INFO]: Waiting for pending navigations...
+[1536934885.367][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.368][INFO]: Waiting for pending navigations...
+[1536934885.369][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.369][INFO]: RESPONSE ExecuteScript "complete"
+[1536934885.371][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//label[contains(text(),'Add Header in case of empty body also')]/preceding-sibling::div/descendant::div[contains(@class,'ui-chkbox-box')]"
+}
+[1536934885.371][INFO]: Waiting for pending navigations...
+[1536934885.372][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.386][INFO]: Waiting for pending navigations...
+[1536934885.387][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.387][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-31"
+} ]
+[1536934885.390][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-31"
+}
+[1536934885.390][INFO]: Waiting for pending navigations...
+[1536934885.391][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.404][INFO]: Waiting for pending navigations...
+[1536934885.405][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.405][INFO]: RESPONSE IsElementDisplayed true
+[1536934885.408][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-31"
+}
+[1536934885.408][INFO]: Waiting for pending navigations...
+[1536934885.409][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.417][INFO]: Waiting for pending navigations...
+[1536934885.418][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.418][INFO]: RESPONSE IsElementEnabled true
+[1536934885.420][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//label[contains(text(),'Add Header in case of empty body also')]/preceding-sibling::div/descendant::div[contains(@class,'ui-chkbox-box')]"
+}
+[1536934885.420][INFO]: Waiting for pending navigations...
+[1536934885.422][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.429][INFO]: Waiting for pending navigations...
+[1536934885.430][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.430][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-31"
+}
+[1536934885.432][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-31"
+}
+[1536934885.432][INFO]: Waiting for pending navigations...
+[1536934885.433][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.506][INFO]: Waiting for pending navigations...
+[1536934885.509][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.509][INFO]: RESPONSE ClickElement
+[1536934885.513][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934885.513][INFO]: Waiting for pending navigations...
+[1536934885.515][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.517][INFO]: Waiting for pending navigations...
+[1536934885.518][INFO]: Done waiting for pending navigations. Status: ok
+[1536934885.518][INFO]: RESPONSE ExecuteScript "complete"
+[1536934885.520][INFO]: COMMAND GetWindow {
+
+}
+[1536934885.520][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934885.522][INFO]: COMMAND GetWindows {
+
+}
+[1536934885.523][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934886.027][INFO]: COMMAND GetWindows {
+
+}
+[1536934886.029][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934886.535][INFO]: COMMAND GetWindows {
+
+}
+[1536934886.537][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934886.543][INFO]: COMMAND Screenshot {
+
+}
+[1536934886.543][INFO]: Waiting for pending navigations...
+[1536934886.545][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.668][INFO]: Waiting for pending navigations...
+[1536934886.669][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.669][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOzde1yUdd7/8dfAnJQBBCzIgvT27Ca0yVT3jpa4JVqplYdbU1PJQ6Hei1ak96KV0q1hKa6GlaaVmm6om9oBrFs6OPdvE7s3sBUPuBqkgSmKgMIMML8/ZsBhOMwgZ/g8feAwc52+13XNX..."
+[1536934886.682][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//label[contains(text(),'Add prefix and suffix to the body before calculating MD5 checksum')]/preceding-sibling::div/descendant::div[contains(@class,'ui-chkbox-box')]"
+}
+[1536934886.682][INFO]: Waiting for pending navigations...
+[1536934886.683][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.697][INFO]: Waiting for pending navigations...
+[1536934886.698][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.698][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-32"
+}
+[1536934886.700][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-32",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-32"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934886.701][INFO]: Waiting for pending navigations...
+[1536934886.702][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.704][INFO]: Waiting for pending navigations...
+[1536934886.705][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.705][INFO]: RESPONSE ExecuteScript
+[1536934886.707][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934886.707][INFO]: Waiting for pending navigations...
+[1536934886.708][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.710][INFO]: Waiting for pending navigations...
+[1536934886.710][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.710][INFO]: RESPONSE ExecuteScript "complete"
+[1536934886.712][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//label[contains(text(),'Add prefix and suffix to the body before calculating MD5 checksum')]/preceding-sibling::div/descendant::div[contains(@class,'ui-chkbox-box')]"
+}
+[1536934886.712][INFO]: Waiting for pending navigations...
+[1536934886.713][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.727][INFO]: Waiting for pending navigations...
+[1536934886.727][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.728][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-32"
+} ]
+[1536934886.730][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-32"
+}
+[1536934886.730][INFO]: Waiting for pending navigations...
+[1536934886.731][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.744][INFO]: Waiting for pending navigations...
+[1536934886.745][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.745][INFO]: RESPONSE IsElementDisplayed true
+[1536934886.747][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-32"
+}
+[1536934886.747][INFO]: Waiting for pending navigations...
+[1536934886.748][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.756][INFO]: Waiting for pending navigations...
+[1536934886.757][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.757][INFO]: RESPONSE IsElementEnabled true
+[1536934886.759][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//label[contains(text(),'Add prefix and suffix to the body before calculating MD5 checksum')]/preceding-sibling::div/descendant::div[contains(@class,'ui-chkbox-box')]"
+}
+[1536934886.759][INFO]: Waiting for pending navigations...
+[1536934886.760][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.767][INFO]: Waiting for pending navigations...
+[1536934886.768][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.768][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-32"
+}
+[1536934886.771][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-32"
+}
+[1536934886.771][INFO]: Waiting for pending navigations...
+[1536934886.771][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.841][INFO]: Waiting for pending navigations...
+[1536934886.846][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.846][INFO]: RESPONSE ClickElement
+[1536934886.850][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934886.850][INFO]: Waiting for pending navigations...
+[1536934886.850][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.853][INFO]: Waiting for pending navigations...
+[1536934886.855][INFO]: Done waiting for pending navigations. Status: ok
+[1536934886.855][INFO]: RESPONSE ExecuteScript "complete"
+[1536934886.858][INFO]: COMMAND GetWindow {
+
+}
+[1536934886.858][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934886.860][INFO]: COMMAND GetWindows {
+
+}
+[1536934886.861][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934887.372][INFO]: COMMAND GetWindows {
+
+}
+[1536934887.374][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934887.880][INFO]: COMMAND GetWindows {
+
+}
+[1536934887.881][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934887.886][INFO]: COMMAND Screenshot {
+
+}
+[1536934887.886][INFO]: Waiting for pending navigations...
+[1536934887.889][INFO]: Done waiting for pending navigations. Status: ok
+[1536934888.023][INFO]: Waiting for pending navigations...
+[1536934888.024][INFO]: Done waiting for pending navigations. Status: ok
+[1536934888.024][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOzde1yUdd7/8dfAnJQBBCzIgvT27Ca0yVT3jpa4JVqplYdbU1PJQ6Hei1ak96KV0q1hKa6GlaaVmm6om9oBrFs6OPdvE7s3sBUPuBqkgSmKgMIMML8/ZsBhOMwgZ/g8feAwc52+13XNX..."
+[1536934888.038][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934888.038][INFO]: Waiting for pending navigations...
+[1536934888.039][INFO]: Done waiting for pending navigations. Status: ok
+[1536934888.040][INFO]: Waiting for pending navigations...
+[1536934888.041][INFO]: Done waiting for pending navigations. Status: ok
+[1536934888.041][INFO]: RESPONSE ExecuteScript "complete"
+[1536934888.043][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//label[text()='Prefix']/following-sibling::input"
+}
+[1536934888.043][INFO]: Waiting for pending navigations...
+[1536934888.044][INFO]: Done waiting for pending navigations. Status: ok
+[1536934888.058][INFO]: Waiting for pending navigations...
+[1536934888.059][INFO]: Done waiting for pending navigations. Status: ok
+[1536934888.059][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-33"
+}
+[1536934888.061][INFO]: COMMAND ClearElement {
+   "id": "0.7989907836082091-33"
+}
+[1536934888.061][INFO]: Waiting for pending navigations...
+[1536934888.062][INFO]: Done waiting for pending navigations. Status: ok
+[1536934888.083][INFO]: Waiting for pending navigations...
+[1536934888.087][INFO]: Done waiting for pending navigations. Status: ok
+[1536934888.087][INFO]: RESPONSE ClearElement
+[1536934888.090][INFO]: COMMAND TypeElement {
+   "id": "0.7989907836082091-33",
+   "value": [ "{" ]
+}
+[1536934888.090][INFO]: Waiting for pending navigations...
+[1536934888.091][INFO]: Done waiting for pending navigations. Status: ok
+[1536934888.146][INFO]: Waiting for pending navigations...
+[1536934888.147][INFO]: Done waiting for pending navigations. Status: ok
+[1536934888.147][INFO]: RESPONSE TypeElement
+[1536934888.149][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934888.149][INFO]: Waiting for pending navigations...
+[1536934888.150][INFO]: Done waiting for pending navigations. Status: ok
+[1536934888.151][INFO]: Waiting for pending navigations...
+[1536934888.152][INFO]: Done waiting for pending navigations. Status: ok
+[1536934888.152][INFO]: RESPONSE ExecuteScript "complete"
+[1536934888.154][INFO]: COMMAND GetWindow {
+
+}
+[1536934888.154][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934888.156][INFO]: COMMAND GetWindows {
+
+}
+[1536934888.157][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934888.661][INFO]: COMMAND GetWindows {
+
+}
+[1536934888.663][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934889.169][INFO]: COMMAND GetWindows {
+
+}
+[1536934889.171][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934889.177][INFO]: COMMAND Screenshot {
+
+}
+[1536934889.177][INFO]: Waiting for pending navigations...
+[1536934889.180][INFO]: Done waiting for pending navigations. Status: ok
+[1536934889.306][INFO]: Waiting for pending navigations...
+[1536934889.307][INFO]: Done waiting for pending navigations. Status: ok
+[1536934889.307][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOzde1yUdd7/8dfAnJQBBCzIgvT27Ca0yVT3jpa4JVqplYdbU1PJQ6Hei1ak96KV0q1hKa6GlaaVmm6om9oBrFs6OPdvE7s3sBUPuBqkgSmKgMIMML8/ZsBhOMwgZ/g8feAwc52+13XNX..."
+[1536934889.320][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934889.320][INFO]: Waiting for pending navigations...
+[1536934889.321][INFO]: Done waiting for pending navigations. Status: ok
+[1536934889.322][INFO]: Waiting for pending navigations...
+[1536934889.323][INFO]: Done waiting for pending navigations. Status: ok
+[1536934889.323][INFO]: RESPONSE ExecuteScript "complete"
+[1536934889.325][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//label[text()='Suffix']/following-sibling::input"
+}
+[1536934889.325][INFO]: Waiting for pending navigations...
+[1536934889.326][INFO]: Done waiting for pending navigations. Status: ok
+[1536934889.340][INFO]: Waiting for pending navigations...
+[1536934889.342][INFO]: Done waiting for pending navigations. Status: ok
+[1536934889.342][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-34"
+}
+[1536934889.345][INFO]: COMMAND ClearElement {
+   "id": "0.7989907836082091-34"
+}
+[1536934889.345][INFO]: Waiting for pending navigations...
+[1536934889.346][INFO]: Done waiting for pending navigations. Status: ok
+[1536934889.368][INFO]: Waiting for pending navigations...
+[1536934889.373][INFO]: Done waiting for pending navigations. Status: ok
+[1536934889.373][INFO]: RESPONSE ClearElement
+[1536934889.379][INFO]: COMMAND TypeElement {
+   "id": "0.7989907836082091-34",
+   "value": [ "}" ]
+}
+[1536934889.379][INFO]: Waiting for pending navigations...
+[1536934889.380][INFO]: Done waiting for pending navigations. Status: ok
+[1536934889.434][INFO]: Waiting for pending navigations...
+[1536934889.435][INFO]: Done waiting for pending navigations. Status: ok
+[1536934889.435][INFO]: RESPONSE TypeElement
+[1536934889.437][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934889.437][INFO]: Waiting for pending navigations...
+[1536934889.438][INFO]: Done waiting for pending navigations. Status: ok
+[1536934889.440][INFO]: Waiting for pending navigations...
+[1536934889.440][INFO]: Done waiting for pending navigations. Status: ok
+[1536934889.440][INFO]: RESPONSE ExecuteScript "complete"
+[1536934889.443][INFO]: COMMAND GetWindow {
+
+}
+[1536934889.443][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934889.445][INFO]: COMMAND GetWindows {
+
+}
+[1536934889.446][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934889.949][INFO]: COMMAND GetWindows {
+
+}
+[1536934889.950][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934890.454][INFO]: COMMAND GetWindows {
+
+}
+[1536934890.456][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934890.462][INFO]: COMMAND Screenshot {
+
+}
+[1536934890.462][INFO]: Waiting for pending navigations...
+[1536934890.464][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.595][INFO]: Waiting for pending navigations...
+[1536934890.596][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.596][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOzde1yUdd7/8dfAnJQBBCzIgvT27Ca0yVT3jpa4JVqplYdbU1PJQ6Hei1ak96KV0q1hKa6GlaaVmm6om9oBrFs6OPdvE7s3sBUPuBqkgSmKgMIMML8/ZsBhOMwgZ/g8feAwc52+13XNX..."
+[1536934890.609][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[contains(@class,'fa-save')]"
+}
+[1536934890.609][INFO]: Waiting for pending navigations...
+[1536934890.610][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.624][INFO]: Waiting for pending navigations...
+[1536934890.627][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.627][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-35"
+}
+[1536934890.630][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-35",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-35"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934890.630][INFO]: Waiting for pending navigations...
+[1536934890.630][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.634][INFO]: Waiting for pending navigations...
+[1536934890.635][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.635][INFO]: RESPONSE ExecuteScript
+[1536934890.637][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934890.637][INFO]: Waiting for pending navigations...
+[1536934890.640][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.644][INFO]: Waiting for pending navigations...
+[1536934890.646][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.646][INFO]: RESPONSE ExecuteScript "complete"
+[1536934890.649][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//span[contains(@class,'fa-save')]"
+}
+[1536934890.649][INFO]: Waiting for pending navigations...
+[1536934890.650][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.666][INFO]: Waiting for pending navigations...
+[1536934890.667][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.667][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-35"
+} ]
+[1536934890.669][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-35"
+}
+[1536934890.669][INFO]: Waiting for pending navigations...
+[1536934890.670][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.685][INFO]: Waiting for pending navigations...
+[1536934890.686][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.686][INFO]: RESPONSE IsElementDisplayed true
+[1536934890.688][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-35"
+}
+[1536934890.688][INFO]: Waiting for pending navigations...
+[1536934890.689][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.698][INFO]: Waiting for pending navigations...
+[1536934890.699][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.699][INFO]: RESPONSE IsElementEnabled true
+[1536934890.701][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[contains(@class,'fa-save')]"
+}
+[1536934890.701][INFO]: Waiting for pending navigations...
+[1536934890.702][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.709][INFO]: Waiting for pending navigations...
+[1536934890.710][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.710][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-35"
+}
+[1536934890.713][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-35"
+}
+[1536934890.713][INFO]: Waiting for pending navigations...
+[1536934890.714][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.799][INFO]: Waiting for pending navigations...
+[1536934890.804][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.804][INFO]: RESPONSE ClickElement
+[1536934890.808][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934890.808][INFO]: Waiting for pending navigations...
+[1536934890.810][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.838][INFO]: Waiting for pending navigations...
+[1536934890.841][INFO]: Done waiting for pending navigations. Status: ok
+[1536934890.841][INFO]: RESPONSE ExecuteScript "complete"
+[1536934890.843][INFO]: COMMAND GetWindow {
+
+}
+[1536934890.843][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934890.847][INFO]: COMMAND GetWindows {
+
+}
+[1536934890.853][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934891.355][INFO]: COMMAND GetWindows {
+
+}
+[1536934891.357][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934891.861][INFO]: COMMAND GetWindows {
+
+}
+[1536934891.863][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934891.868][INFO]: COMMAND Screenshot {
+
+}
+[1536934891.868][INFO]: Waiting for pending navigations...
+[1536934891.870][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.011][INFO]: Waiting for pending navigations...
+[1536934892.012][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.013][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOyde1hU1frHP6Ps7U8GFAUviXgAL5h3TTwWHRWt1ErxeMvMUlFIoctoiZp4R00wxVIoMbVCs1BP0jmBZmImZlLeTdEEjoihguBl8DQbnd8fM8AAMwzITWt9noeHmT17rfWu697ru9+9l..."
+[1536934892.026][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[contains(@class,'fa-play')]"
+}
+[1536934892.027][INFO]: Waiting for pending navigations...
+[1536934892.028][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.042][INFO]: Waiting for pending navigations...
+[1536934892.043][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.043][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-36"
+}
+[1536934892.046][INFO]: COMMAND ExecuteScript {
+   "args": [ {
+      "ELEMENT": "0.7989907836082091-36",
+      "element-6066-11e4-a52e-4f735466cecf": "0.7989907836082091-36"
+   } ],
+   "script": "arguments[0].scrollIntoView(true);"
+}
+[1536934892.046][INFO]: Waiting for pending navigations...
+[1536934892.047][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.050][INFO]: Waiting for pending navigations...
+[1536934892.051][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.051][INFO]: RESPONSE ExecuteScript
+[1536934892.053][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934892.053][INFO]: Waiting for pending navigations...
+[1536934892.054][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.055][INFO]: Waiting for pending navigations...
+[1536934892.056][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.056][INFO]: RESPONSE ExecuteScript "complete"
+[1536934892.058][INFO]: COMMAND FindElements {
+   "using": "xpath",
+   "value": "//span[contains(@class,'fa-play')]"
+}
+[1536934892.058][INFO]: Waiting for pending navigations...
+[1536934892.059][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.073][INFO]: Waiting for pending navigations...
+[1536934892.074][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.074][INFO]: RESPONSE FindElements [ {
+   "ELEMENT": "0.7989907836082091-36"
+} ]
+[1536934892.076][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.7989907836082091-36"
+}
+[1536934892.076][INFO]: Waiting for pending navigations...
+[1536934892.077][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.090][INFO]: Waiting for pending navigations...
+[1536934892.091][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.091][INFO]: RESPONSE IsElementDisplayed true
+[1536934892.093][INFO]: COMMAND IsElementEnabled {
+   "id": "0.7989907836082091-36"
+}
+[1536934892.094][INFO]: Waiting for pending navigations...
+[1536934892.095][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.103][INFO]: Waiting for pending navigations...
+[1536934892.104][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.104][INFO]: RESPONSE IsElementEnabled true
+[1536934892.106][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//span[contains(@class,'fa-play')]"
+}
+[1536934892.106][INFO]: Waiting for pending navigations...
+[1536934892.107][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.115][INFO]: Waiting for pending navigations...
+[1536934892.115][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.115][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.7989907836082091-36"
+}
+[1536934892.118][INFO]: COMMAND ClickElement {
+   "id": "0.7989907836082091-36"
+}
+[1536934892.118][INFO]: Waiting for pending navigations...
+[1536934892.119][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.184][INFO]: Waiting for pending navigations...
+[1536934892.188][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.188][INFO]: RESPONSE ClickElement
+[1536934892.193][INFO]: COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return document.readyState"
+}
+[1536934892.193][INFO]: Waiting for pending navigations...
+[1536934892.196][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.198][INFO]: Waiting for pending navigations...
+[1536934892.199][INFO]: Done waiting for pending navigations. Status: ok
+[1536934892.199][INFO]: RESPONSE ExecuteScript "complete"
+[1536934892.203][INFO]: COMMAND GetWindow {
+
+}
+[1536934892.203][INFO]: RESPONSE GetWindow "CDwindow-8A56C732B50BDD729D4495DBCE17E44E"
+[1536934892.206][INFO]: COMMAND GetWindows {
+
+}
+[1536934892.208][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934892.712][INFO]: COMMAND GetWindows {
+
+}
+[1536934892.714][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934893.220][INFO]: COMMAND GetWindows {
+
+}
+[1536934893.222][INFO]: RESPONSE GetWindows [ "CDwindow-8A56C732B50BDD729D4495DBCE17E44E" ]
+[1536934893.228][INFO]: COMMAND Screenshot {
+
+}
+[1536934893.228][INFO]: Waiting for pending navigations...
+[1536934893.230][INFO]: Done waiting for pending navigations. Status: ok
+[1536934893.361][INFO]: Waiting for pending navigations...
+[1536934893.362][INFO]: Done waiting for pending navigations. Status: ok
+[1536934893.362][INFO]: RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABRUAAAJ4CAYAAAD7tQR5AAAgAElEQVR4nOy9a1BU19rv+2tm291Ac7W5g7aCgoEo4hWRSAIrJN5vUbNca5n1Zu2dVXu9e2VX5cP5dGrXPlXn7E/vqVqn3lQlbyVvNIlLs4x3McEFEUXxgqIYUFBQlGtjAw10A932pM+H5tJAc5Ory..."
+[1536935013.378][INFO]: COMMAND Quit {
+
+}
+[1536935013.429][INFO]: RESPONSE Quit

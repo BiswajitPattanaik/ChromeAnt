@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<project name="OwnTaskExample" default="build" basedir=".">
+  <target name="configure" depends="">
+      <taskdef name="chrome-test" classname="ChromeTest">
+        <classpath refid="my.classpath"/>
+      </taskdef>
+  </target>
+  <path id="cav.classpath">
+    <fileset dir="lib">
+      <include name="*.jar" />
+    </fileset>
+    <fileset dir="extraClass">
+      <include name="*.class"/>
+    </fileset>
+  </path>
+  <path id="ext.classpath">
+    <fileset dir="lib">
+      <include name="*.jar" />
+    </fileset>
+  </path>
+   <path id="my.classpath">
+    <fileset dir="AntLib">
+      <include name="*.jar" />
+    </fileset>
+    <dirset id="them" dir=".">
+      <include name="classes" />
+    </dirset>
+    <!--<fileset dir="classes">
+      <include name="*.class"/>
+    </fileset>-->
+    <fileset dir="lib">
+      <include name="*.jar"/>
+    </fileset>
+  </path>
+  <target name="clean">
+    <delete>
+      <fileset dir="classes">
+        <include name="*"/>
+      </fileset>
+      <fileset dir="extraClass">
+        <include name="*"/>
+      </fileset>
+     </delete>
+  </target>
+  <target name="clean-chrome-data">
+    <delete>
+      <fileset dir="log">
+        <include name="*"/>
+      </fileset>
+      <fileset dir="image">
+        <include name="*"/>
+      </fileset>
+    </delete>
+  </target>
+  <target name="build" depends="clean">
+      <mkdir dir="classes"/>
+      <javac srcdir="extraSource" destdir="extraClass" includeantruntime="false">
+          <classpath refid="ext.classpath"/>
+      </javac>
+      <javac srcdir="cavsrc" destdir="classes" includeantruntime="false">
+          <classpath refid="cav.classpath"/>
+      </javac>
+      <javac srcdir="source" destdir="classes" includeantruntime="false">
+          <classpath refid="my.classpath"/>
+      </javac>
+  </target> 	 
+  <target name="chrome" depends="configure,clean-chrome-data">
+      <chrome-test chromeExecutablePath="${basedir}/etc/chromedriver-2.41" chromeBinaryPath="/opt/google/chrome/google-chrome" headlessFlag="true">
+          <getURL url="https://10.10.30.106/ProductUI/#/login" caseName="Netstorm ProductUI login Page"/>
+          <sendKey locator="name" value="name" text="JCP_Com" caseName="Enter User Name"/> 
+          <sendKey locator="name" value="password" text="cavisson" caseName="Enter User Pass"/> 
+          <submit locator="id" value="login-button" caseName="Login Button"/>
+          <click locator="xpath" value="//md-card[contains(@class,'totalScenarioCard')]" caseName="open all scenarios"/>
+          <waitFor interval="10" caseName="wait for 10 seconds"/>
+          <assert locator="xpath" value="//div[contains(@class,'ui-splitbutton')]/button[contains(@class,'ui-button-text-icon-left')]/span[contains(@class,'ui-button-text')]" assertValue="JCP_Com" caseName="assert user"/>
+          <click locator="xpath" value="//div[contains(@class,'ui-splitbutton')]//button[contains(@class,'ui-splitbutton-menubutton')]" caseName="click corner ui button"/>
+          <click locator="xpath" value="//span[text()='Logout']" caseName="LogOut"/>
+      </chrome-test> 
+  </target>
+  <target name="test">
+      <echo>${basedir}</echo>
+  </target>
+</project>

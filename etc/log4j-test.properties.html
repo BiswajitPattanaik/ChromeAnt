@@ -1,0 +1,15 @@
+# Define the root logger with appender file
+log = /home/netstorm/biswajit/chromeant/log
+log4j.rootLogger = DEBUG, FILE
+
+# Define the file appender
+log4j.appender.FILE=org.apache.log4j.FileAppender
+log4j.appender.FILE.append=false
+log4j.appender.FILE.File=${log}/log_chrome.html
+log4j.logger.org.apache=on
+log4j.logger.org.hybernate=off
+log4j.logger.org.springframework=off
+# Define the layout for file appender
+log4j.appender.FILE.layout=com.mypackage.HtmlCustomLayout
+log4j.appender.FILE.layout.Title=HTML Layout Example
+log4j.appender.FILE.layout.LocationInfo=true
