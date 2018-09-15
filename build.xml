@@ -71,7 +71,7 @@
       </tstamp>
       <echo message="${TODAY_GB}"/>
       <chrome-test chromeExecutablePath="${basedir}/etc/chromedriver-2.41" chromeBinaryPath="/opt/google/chrome/google-chrome" headlessFlag="false">
-          <getURL url="http://10.10.30.15:8003/ProductUI/#/login" caseName="Netstorm ProductUI login Page"/>
+          <getURL url="https://10.10.30.97/" caseName="Netstorm ProductUI login Page"/>
 
 	  <!-- Login Process started -->	
 
