@@ -22,8 +22,9 @@
     <fileset dir="AntLib">
       <include name="*.jar" />
     </fileset>
-    <dirset id="them" dir=".">
+    <dirset dir=".">
       <include name="classes" />
+      <include name="extraClass" />
     </dirset>
     <!--<fileset dir="classes">
       <include name="*.class"/>
@@ -54,7 +55,7 @@
   </target>
   <target name="build" depends="clean">
       <mkdir dir="classes"/>
-      <javac srcdir="extraSource" destdir="extraClass" includeantruntime="false">
+      <javac srcdir="extraSource" destdir="extraClass" includeantruntime="true">
           <classpath refid="ext.classpath"/>
       </javac>
       <javac srcdir="cavsrc" destdir="classes" includeantruntime="false">
@@ -65,16 +66,79 @@
       </javac>
   </target> 	 
   <target name="chrome" depends="configure,clean-chrome-data">
-      <chrome-test chromeExecutablePath="${basedir}/etc/chromedriver-2.41" chromeBinaryPath="/opt/google/chrome/google-chrome" headlessFlag="true">
-          <getURL url="https://10.10.30.106/ProductUI/#/login" caseName="Netstorm ProductUI login Page"/>
-          <sendKey locator="name" value="name" text="JCP_Com" caseName="Enter User Name"/> 
-          <sendKey locator="name" value="password" text="cavisson" caseName="Enter User Pass"/> 
+      <tstamp>
+          <format property="TODAY_GB" pattern="yyyyMMdd_HHmmss" unit="millisecond"/>
+      </tstamp>
+      <echo message="${TODAY_GB}"/>
+      <chrome-test chromeExecutablePath="${basedir}/etc/chromedriver-2.41" chromeBinaryPath="/opt/google/chrome/google-chrome" headlessFlag="false">
+	  <assertScenario machineAddress="10.10.30.18" keyWord="SGRP" controllerName="work_4" projectName="XMPP" subProjectName="XMPP" scenarioName="XMPP.conf" caseName="Assert Scenario Test"/>
+          <getURL url="https://10.10.30.97/" caseName="Netstorm ProductUI login Page"/>
+
+	  <!-- Login Process started -->	
+
+          <sendKey locator="name" value="name" text="cavisson" caseName="Enter User Name"/> 
+          <sendKey locator="name" value="password" text="@dmin" caseName="Enter User Pass"/> 
           <submit locator="id" value="login-button" caseName="Login Button"/>
+
+	  <!-- Login Process Completed-->	
+	
           <click locator="xpath" value="//md-card[contains(@class,'totalScenarioCard')]" caseName="open all scenarios"/>
-          <waitFor interval="10" caseName="wait for 10 seconds"/>
-          <assert locator="xpath" value="//div[contains(@class,'ui-splitbutton')]/button[contains(@class,'ui-button-text-icon-left')]/span[contains(@class,'ui-button-text')]" assertValue="JCP_Com" caseName="assert user"/>
-          <click locator="xpath" value="//div[contains(@class,'ui-splitbutton')]//button[contains(@class,'ui-splitbutton-menubutton')]" caseName="click corner ui button"/>
-          <click locator="xpath" value="//span[text()='Logout']" caseName="LogOut"/>
+          <assert locator="xpath" value="//div[contains(@class,'ui-splitbutton')]/button[contains(@class,'ui-button-text-icon-left')]/span[contains(@class,'ui-button-text')]" assertValue="cavisson" caseName="assert user"/>
+	  
+	  <!-- Scenario Create Process started -->	
+          
+	  <click locator="xpath" value="//button[@label='Create']" caseName="create scenario"/>
+          <click locator="xpath" value="//div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]" caseName="click project"/>
+          <click locator="xpath" value="//div[text()='Project ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul/li/span[text()='default']" caseName="select project"/>
+          <click locator="xpath" value="//div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]" caseName="click sub project"/>
+          <click locator="xpath" value="//div[text()='SubProject ']/parent::div/descendant::p-dropdown[contains(@class,'filterDrop')]//ul//span[text()='default']" caseName="select sub project"/>
+          <sendkey locator="xpath" value="//div[text()='Scenario Name ']/parent::div/descendant::input" text="test_biswajit${TODAY_GB}" caseName="enter scenario name"/>
+          <submit locator="xpath" value="//footer/descendant::button[@label='Next']" caseName="click Next button"/>
+	  
+	  <!-- Scenario Create Process Completed -->	
+          
+	  <!-- Group Create Process Started -->	
+          <waitFor interval="5" caseName="wait for 5 seconds"/>
+	  <click locator="xpath" value="//button[@title='Add Group']" caseName="Add group to scenario"/>
+          <sendkey locator="name" value="groupName" text="GroupTest" caseName="Enter Group Name"/>
+          <click locator="xpath" value="//p-radiobutton[@value='Script']" caseName="Click on Script Type Radio"/>
+          <click locator="xpath" value="//div[text()='User Profile ']/parent::div/descendant::p-dropdown" caseName="Click on User Profile"/>
+          <click locator="xpath" value="//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='Internet']" caseName="Select Internet Profile"/>
+          <click locator="xpath" value="//div[text()='Project ']/parent::div/descendant::p-dropdown" caseName="Click on Project"/>
+          <click locator="xpath" value="//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default']" caseName="Select default project"/>
+          <click locator="xpath" value="//div[text()='Sub Project ']/parent::div/descendant::p-dropdown" caseName="Click on Project"/>
+          <click locator="xpath" value="//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='default']" caseName="Select default Sub project"/>
+          <click locator="xpath" value="//div[text()='Script ']/parent::div/descendant::p-dropdown" caseName="Click on Script DropDown"/>
+          <sendkey locator="xpath" value="//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul/ancestor::div[contains(@class,'ui-dropdown-panel')]/child::div[contains(@class,'ui-dropdown-filter-container')]/child::input" text="hpd" caseName="Enter the name of script "/>
+          <click locator="xpath" value="//div[contains(@class,'ui-dropdown-items-wrapper')]/child::ul//span[text()='hpd_tours']" caseName="Select Script Name"/>
+          <click locator="xpath" value="//p-dialog[contains(@class,'addEditGroupDialog')]/div/descendant::button/span[text()='OK']" caseName="Click on Group Add OK"/>
+	  
+	  <!-- Group Create Process Completed -->	
+          <!-- Open group based settings --> 
+
+          <click locator="xpath" value="//span[text()='Group Based Settings']" caseName="Click on Group Based Settings"/>
+         
+          <!-- Open group based settings done--> 
+
+          <click locator="xpath" value="//span[text()='Group Based Settings']/ancestor::div[contains(@class,'ui-panelmenu-panel')]/descendant::span[text()='HTTP']" caseName="Click on Group Based Settings HTTP Settings"/>
+          <click locator="xpath" value="//a[text()='Advanced Settings']" caseName="Click on Group Based Settings HTTP Settings Advanced settings"/>
+          <waitFor interval="2" caseName="wait for 2 seconds"/>
+          <click locator="xpath" value="//label[contains(text(),'Add MD5 checksum HTTP header in the request based on the body of the HTTP request')]/preceding-sibling::div/descendant::div[contains(@class,'ui-chkbox-box')]" caseName="Click MD5 Header CheckBox"/>
+          <sendkey locator="xpath" value="//label[text()='Header Name']/following-sibling::input" text="MD5-Header" caseName="Edit MD5 Header Name"/>
+          <click locator="xpath" value="//label[contains(text(),'Add Header in case of empty body also')]/preceding-sibling::div/descendant::div[contains(@class,'ui-chkbox-box')]" caseName="Click on Add Header in case of empty body also"/>
+          <click locator="xpath" value="//label[contains(text(),'Add prefix and suffix to the body before calculating MD5 checksum')]/preceding-sibling::div/descendant::div[contains(@class,'ui-chkbox-box')]" caseName="Click MD5 Header Suffix Prefix CheckBox"/>
+          <sendkey locator="xpath" value="//label[text()='Prefix']/following-sibling::input" text="{" caseName="Add MD5 Header Prefix"/>
+          <sendkey locator="xpath" value="//label[text()='Suffix']/following-sibling::input" text="}" caseName="Add MD5 Header Suffix"/>
+          <click locator="xpath" value="//span[contains(@class,'fa-save')]" caseName="Click on Save Scenario Button"/>
+          <click locator="xpath" value="//span[contains(@class,'fa-play')]" caseName="Click on Start Scenario Button"/>
+<!--          <click locator="xpath" value="//button[@label='Start Scenario']" caseName="Click On Start scenario Panel Scenario Button"/>-->
+          <waitFor interval="120" caseName="wait for 120 seconds"/>
+	  
+          
+<!--	  <click locator="xpath" value="//div[contains(@class,'ui-splitbutton')]//button[contains(@class,'ui-splitbutton-menubutton')]" caseName="click corner ui button"/>
+          <click locator="xpath" value="//span[text()='Logout']" caseName="LogOut"/>-->
+
+	  <assertScenario machineAddress="10.10.30.97" keyWord="SGRP" controllerName="work" projectName="default" subProjectName="default" scenarioName="scenarioName" caseName="Assert Scenario Name 1"/>
       </chrome-test> 
   </target>
   <target name="test">

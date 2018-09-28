@@ -71,7 +71,8 @@
       </tstamp>
       <echo message="${TODAY_GB}"/>
       <chrome-test chromeExecutablePath="${basedir}/etc/chromedriver-2.41" chromeBinaryPath="/opt/google/chrome/google-chrome" headlessFlag="false">
-          <getURL url="https://10.10.30.97/" caseName="Netstorm ProductUI login Page"/>
+	  <!--	  <assertScenario machineAddress="10.10.30.18" keyWord="SGRP" controllerName="work_4" projectName="XMPP" subProjectName="XMPP" scenarioName="XMPP.conf" caseName="Assert Scenario Test"/>-->
+          <getURL url="http://10.10.30.17:8011/" caseName="Netstorm ProductUI login Page"/>
 
 	  <!-- Login Process started -->	
 
@@ -131,11 +132,13 @@
           <click locator="xpath" value="//span[contains(@class,'fa-save')]" caseName="Click on Save Scenario Button"/>
           <click locator="xpath" value="//span[contains(@class,'fa-play')]" caseName="Click on Start Scenario Button"/>
 <!--          <click locator="xpath" value="//button[@label='Start Scenario']" caseName="Click On Start scenario Panel Scenario Button"/>-->
-          <waitFor interval="120" caseName="wait for 120 seconds"/>
+          <waitFor interval="10" caseName="wait for 120 seconds"/>
 	  
           
 <!--	  <click locator="xpath" value="//div[contains(@class,'ui-splitbutton')]//button[contains(@class,'ui-splitbutton-menubutton')]" caseName="click corner ui button"/>
           <click locator="xpath" value="//span[text()='Logout']" caseName="LogOut"/>-->
+
+	  <assertScenario machineAddress="10.10.30.17" keyWord="G_HTTP_BODY_CHECKSUM_HEADER ALL 1 1 1 MD5-Header { q" controllerName="work_3" projectName="default" subProjectName="default" scenarioName="test_biswajit${TODAY_GB}.conf" caseName="Assert Scenario Name 1"/>
       </chrome-test> 
   </target>
   <target name="test">

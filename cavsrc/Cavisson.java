@@ -18,8 +18,8 @@ import javax.imageio.ImageIO;*/
 import java.util.concurrent.TimeUnit;
 class CavissonDriver
 {
-	String url;
-    private String imageDir ;
+	private String url;
+        private String imageDir ;
 	Logger log = Logger.getLogger(CavissonDriver.class.getName());
 	WebDriver driver;
 	WebDriverWait wait;
@@ -309,6 +309,11 @@ class CavissonDriver
             }catch(Exception e){
                 log.error(String.format("Driver Quit Exception : [Exception] : \"%s\" ",e.getMessage()));
             }    
-        }
+       }
+       public void log(String message)
+       {
+           log.info(message);
+	
+       }
 
 }

@@ -20,6 +20,7 @@ public class ChromeTest extends Task{
         private int sendKeyItem = 0;
         private int waitItem = 0;
         private int assertItem = 0;
+        private int assertScenarioItem = 0;
         private int selectItem = 0;
 	private void setUp(){
 		baseDir = getProject().getBaseDir().getAbsolutePath();
@@ -104,6 +105,17 @@ public class ChromeTest extends Task{
 		else if(actionType.equals("select")){
 			Select select = actions.get(m,Select.class);
 			driver.select(locateElement(select.getLocator(),select.getValue()),select.getSelectValue(),select.getCaseName());
+		}
+		else if(actionType.equals("assertScenario")){
+			AssertScenario assertScenario = actions.get(m,AssertScenario.class);
+			log(" [ DEBUG ] ASSERT - Assert Scenario is Logged");
+			boolean b = assertScenario.checkAssert();
+			if(b){
+				driver.log("Keyword : "+ assertScenario.getKeyWord() + " Found in scenario");
+			}
+			else{
+				driver.log("Keyword : " + assertScenario.getKeyWord() + " Not Found in scenario");
+			}
 		}
         }	
 	}
@@ -199,6 +211,14 @@ public class ChromeTest extends Task{
 		actions.put("get_"+getItem,get,GetURL.class);
 		actionsList.add("get_"+getItem);
         	return get;
+	}
+
+	public AssertScenario createAssertScenario(){
+		assertScenarioItem++;
+		AssertScenario assertScenario = new AssertScenario();
+		actions.put("assertScenario_"+assertScenarioItem,assertScenario,AssertScenario.class);
+		actionsList.add("assertScenario_"+assertScenarioItem);
+        	return assertScenario;
 	}
 
 	public abstract class Action{
@@ -365,6 +385,62 @@ public class ChromeTest extends Task{
 		}
 		public String getUrl(){
 			return this.url;
+		}
+	}
+	public class AssertScenario extends Action{
+		public String machineAddress;
+		public String keyWord;
+		public String controllerName;
+		public String projectName;
+		public String subProjectName;
+		public String scenarioName;
+
+		public AssertScenario(){
+			type = "assertScenario";
+		}
+
+		public String getMachineAddress(){
+			return this.machineAddress;
+		}
+		public void setMachineAddress(String machineAddress){
+			this.machineAddress = machineAddress;
+		}
+		public String getKeyWord(){
+			return this.keyWord;
+		}
+		public void setKeyWord(String keyWord){
+			this.keyWord = keyWord;
+		}
+		public void setControllerName(String controllerName){
+			this.controllerName = controllerName;
+		}
+		public String getControllerName(){
+			return this.controllerName;
+		}
+		public String getProjectName(){
+			return this.projectName;
+		}
+		public void setProjectName(String projectName){
+			this.projectName = projectName;
+		}
+		public String getSubProjectName(){
+			return this.subProjectName;
+		}
+		public void setSubProjectName(String subProjectName){
+			this.subProjectName = subProjectName;
+		}
+		public void setScenarioName(String scenarioName){
+			this.scenarioName = scenarioName;
+		}
+		public String getScenarioName(String scenarioName){
+			return this.scenarioName;
+		}
+		public boolean checkAssert(){
+			String remoteCommand = "grep" + " " + "'" + keyWord + "'" + " " + "/home/cavisson/" + controllerName + "/scenarios/" + projectName + "/" + subProjectName + "/" + scenarioName;
+			try{
+			System.out.println(remoteCommand);
+			return RemoteHandler.remoteCmd("cavisson",machineAddress,22,"cavisson",remoteCommand).equals(keyWord);
+			}catch(Exception e){return false;}
 		}
 	}
 
