@@ -65,5 +65,4 @@
           <classpath refid="my.classpath"/>
       </javac>
   </target> 	 
- </target>
 </project>
