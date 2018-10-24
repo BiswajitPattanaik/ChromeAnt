@@ -3,6 +3,8 @@ import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.remote.*;
 import org.openqa.selenium.*;
 import java.util.*;
+import java.text.SimpleDateFormat;
+import java.io.File;
 public class ChromeTest extends Task{
 	private String chromeExecutablePath = "";
 	private String chromeBinaryPath = "";
@@ -11,6 +13,8 @@ public class ChromeTest extends Task{
 	private String etcDir;
 	private String imageDir;
 	private String logDir;
+	private String suiteName = "";
+	private String testRunId = "";
 	private CavissonDriver driver = null;
 	private Context actions = new Context();
 	private ArrayList<String> actionsList = new ArrayList<String>();
@@ -24,10 +28,39 @@ public class ChromeTest extends Task{
         private int selectItem = 0;
 	private void setUp(){
 		baseDir = getProject().getBaseDir().getAbsolutePath();
-        etcDir = baseDir+"/etc";
-        imageDir = baseDir+"/image";
-        logDir = baseDir+"/log";
+        	etcDir = baseDir+"/etc";
+        	imageDir = baseDir+"/image";
+        	logDir = baseDir+"/log";
+        	testRunId = generateTestRunId();
+                makeTestRunDir();		
 	}
+        private void makeTestRunDir()throws BuildException{
+		File logFile = new File(logDir+"/"+testRunId);
+                if (!logFile.exists()){
+			try{
+				logFile.mkdirs();
+			}
+			catch(Exception e){
+				throw new BuildException("Could not create TestRun Directory"); 
+			}
+		}
+       		File imageFile = new File(imageDir+"/"+testRunId);
+                if (!imageFile.exists()){
+			try{
+				imageFile.mkdirs();
+			}
+			catch(Exception e){
+				throw new BuildException("Could not create TestRun Directory"); 
+			}
+		} 
+	}
+        private String generateTestRunId(){
+		Date date = new Date();
+		SimpleDateFormat formatter = new SimpleDateFormat("ddMMyy_hhmmss");
+		String strDate= formatter.format(date);
+		return strDate;	
+        }
+        
 	private void verifyTaskConfiguration(){
 		if (chromeExecutablePath.isEmpty()){
 			throw new BuildException("\"chromeExecutablePath\" is mandatory or can not be left blank");
@@ -35,7 +68,10 @@ public class ChromeTest extends Task{
 		if (chromeBinaryPath.isEmpty()){
 			throw new BuildException("\"chromeBinaryPath\" is mandatory or can not be left blank");
 		}
-	}
+		if (suiteName.isEmpty()){
+			throw new BuildException("\"suiteName\" is mandatory or can not be left blank");
+		}	
+        }
 	private CavissonDriver instantiateDriver(){
 		System.setProperty("webdriver.chrome.driver", chromeExecutablePath);
                 System.setProperty("webdriver.chrome.logfile", baseDir+"/log/chrome_debug.log");
@@ -59,7 +95,7 @@ public class ChromeTest extends Task{
         	WebDriver driver = new ChromeDriver(capabilities);
 		CavissonDriver cav = null;       
         	try{
-        		cav = new CavissonDriver(driver,etcDir,imageDir);
+        		cav = new CavissonDriver(driver,etcDir,imageDir,logDir,suiteName,testRunId);
         	}catch(Exception e){log("Error in instantiating the Driver");}
         	try{
         	//Thread.sleep(10000);
@@ -120,14 +156,17 @@ public class ChromeTest extends Task{
         }	
 	}
 	public void setChromeExecutablePath(String chromeExecutablePath){
-		this.chromeExecutablePath=chromeExecutablePath;
+		this.chromeExecutablePath = chromeExecutablePath;
 	}
 	public void setChromeBinaryPath(String chromeBinaryPath){
-		this.chromeBinaryPath=chromeBinaryPath;
+		this.chromeBinaryPath = chromeBinaryPath;
 	}
 	public void setHeadlessFlag(String headlessFlag){
-		this.headlessFlag=Boolean.parseBoolean(headlessFlag);
+		this.headlessFlag = Boolean.parseBoolean(headlessFlag);
 	}
+        public void setSuiteName(String suiteName){
+                this.suiteName = suiteName; 
+        }
 
 	public By locateElement(String name , String value){
 		try{
@@ -394,11 +433,24 @@ public class ChromeTest extends Task{
 		public String projectName;
 		public String subProjectName;
 		public String scenarioName;
+		public String userName = "cavisson";
+		public String password = "cavisson";
 
 		public AssertScenario(){
 			type = "assertScenario";
 		}
-
+		public String getUserName(){
+			return this.userName;
+		}
+		public void setUserName(String userName){
+			this.userName = userName; 
+		}
+		public String getPassword(){
+			return this.password;
+		}
+		public void setPassword(String password){
+			this.password = password;
+		}
 		public String getMachineAddress(){
 			return this.machineAddress;
 		}
@@ -439,7 +491,7 @@ public class ChromeTest extends Task{
 			String remoteCommand = "grep" + " " + "'" + keyWord + "'" + " " + "/home/cavisson/" + controllerName + "/scenarios/" + projectName + "/" + subProjectName + "/" + scenarioName;
 			try{
 			System.out.println(remoteCommand);
-			return RemoteHandler.remoteCmd("cavisson",machineAddress,22,"cavisson",remoteCommand).equals(keyWord);
+			return RemoteHandler.remoteCmd(userName,machineAddress,22,password,remoteCommand).equals(keyWord);
 			}catch(Exception e){return false;}
 		}
 	}

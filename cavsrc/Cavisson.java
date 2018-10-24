@@ -15,34 +15,50 @@ import org.openqa.selenium.WebElement;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 import javax.imageio.ImageIO;*/
+import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
 class CavissonDriver
 {
 	private String url;
         private String imageDir ;
+        private String logDir ;
+        private String suiteName ;
 	Logger log = Logger.getLogger(CavissonDriver.class.getName());
 	WebDriver driver;
 	WebDriverWait wait;
-        CavissonDriver(WebDriver driver,String etcDir,String imgDir)throws IOException
-		{
+        public CavissonDriver(WebDriver driver,String etcDir,String imgDir,String logDir , String suiteName )throws IOException
+	{
 		this.driver=driver;
 		Properties p=new Properties();
-        String proprtiesFile = etcDir+"/log4j-test.properties";
-        this.imageDir=imgDir;
-        if (new File(etcDir+"/log4j-test.properties").exists()){
-	       p.load(new FileInputStream(proprtiesFile));
-		   PropertyConfigurator.configure(p);
-        }
-        else{
-            log.warn("properties file not found hence continueing with out logging");
-        }
-		}
+        	String proprtiesFile = etcDir+"/log4j-test.properties";
+        	this.imageDir=imgDir;
+        	this.logDir=logDir;
+		this.suiteName = suiteName;
+        	/*if (new File(etcDir+"/log4j-test.properties").exists()){
+	       		p.load(new FileInputStream(proprtiesFile));
+			Iterator itr = p.keySet().iterator();
+			String str = "";
+			while(itr.hasNext()){
+				str= (String)itr.next();
+				System.out.println("The test 4j property for " + str +  " is " + p.getProperty(str));
+			}
+			//PropertyConfigurator.configure(p);
+			PropertyConfigurator.configure(getProperties(logDir,suiteName));
+        	}
+        	else{
+            		log.warn("properties file not found hence continueing with out logging");
+        	}*/
+		PropertyConfigurator.configure(getProperties(logDir,suiteName));
+	}
+        public CavissonDriver(WebDriver driver,String etcDir,String imgDir,String logDir ,String suiteName,String testRunId)throws IOException{
+		this(driver , etcDir ,imgDir+"/"+testRunId , logDir+"/"+testRunId,suiteName);		
+	}
 	public WebElement findElement(By by)
-		{
+	{
 		return driver.findElement(by);
-		}
+	}
         public int sendKeys(By by,String str,String testcase)
-		{
+	{
 		try{
 			waitForLoad(driver);
                         WebElement element = driver.findElement(by);
@@ -70,7 +86,7 @@ class CavissonDriver
                 log.error(String.format("Mescelleneous Exception : \"%s\" : [Exception] : \"%s\" ",testcase,e.getMessage()));    return 3;
 		}
 		return 0;
-		}
+	}
         public int select(By by,String str,String testcase)
 		{
 		try{
@@ -259,7 +275,7 @@ class CavissonDriver
      		try {
 				
 			if(src!=null){
-     		 	FileUtils.copyFile(src, new File(imageDir+"/Img"+System.currentTimeMillis()+".png"));}
+     		 	FileUtils.copyFile(src, new File(imageDir+"/Img_" + suiteName + "_" + System.currentTimeMillis()+".png"));}
 		     }
       		catch (IOException e)
      		{
@@ -315,5 +331,20 @@ class CavissonDriver
            log.info(message);
 	
        }
+       private Properties getProperties(String logDir , String suiteName){
+           Properties p = new Properties();
+	   p.put("log",logDir); 
+	   p.put("log4j.rootLogger","DEBUG, FILE"); 
+	   p.put("log4j.appender.FILE","org.apache.log4j.FileAppender"); 
+	   p.put("org.apache.log4j.FileAppender","true"); 
+	   p.put("log4j.appender.FILE.File","${log}/log_chrome"+suiteName+".html"); 
+	   p.put("log4j.logger.org.apache","off"); 
+	   p.put("log4j.logger.org.hybernate","off"); 
+	   p.put("log4j.logger.org.springframework","off"); 
+	   p.put("log4j.appender.FILE.layout","HtmlCustomLayout"); 
+	   p.put("log4j.appender.FILE.layout.Title","HTML Layout Example"); 
+	   p.put("log4j.appender.FILE.layout.LocationInfo","false");
+	   return p; 
+       } 
 
 }
